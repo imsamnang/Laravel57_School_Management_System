@@ -1,9 +1,10 @@
 	<div class="navbar navbar-expand-md navbar-dark">
 		<div class="navbar-brand">
 			<a href="index.html" class="d-inline-block">
-				<img src="{{ asset('assets/backend/global_assets/images/logo_light.png') }}" alt="">
+				<img src="../../../../global_assets/images/logo_light.png" alt="">
 			</a>
 		</div>
+
 		<div class="d-md-none">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
 				<i class="icon-tree5"></i>
@@ -12,6 +13,7 @@
 				<i class="icon-paragraph-justify3"></i>
 			</button>
 		</div>
+
 		<div class="collapse navbar-collapse" id="navbar-mobile">
 			<ul class="navbar-nav">
 				<li class="nav-item">
@@ -19,46 +21,55 @@
 						<i class="icon-paragraph-justify3"></i>
 					</a>
 				</li>
+
 				<li class="nav-item dropdown">
 					<a href="#" class="navbar-nav-link dropdown-toggle caret-0" data-toggle="dropdown">
 						<i class="icon-git-compare"></i>
 						<span class="d-md-none ml-2">Git updates</span>
 						<span class="badge badge-pill bg-warning-400 ml-auto ml-md-0">9</span>
 					</a>
+
 					<div class="dropdown-menu dropdown-content wmin-md-350">
 						<div class="dropdown-content-header">
 							<span class="font-weight-semibold">Git updates</span>
 							<a href="#" class="text-default"><i class="icon-sync"></i></a>
 						</div>
+
 						<div class="dropdown-content-body dropdown-scrollable">
 							<ul class="media-list">
 								<li class="media">
 									<div class="mr-3">
 										<a href="#" class="btn bg-transparent border-primary text-primary rounded-round border-2 btn-icon"><i class="icon-git-pull-request"></i></a>
 									</div>
+
 									<div class="media-body">
 										Drop the IE <a href="#">specific hacks</a> for temporal inputs
 										<div class="text-muted font-size-sm">4 minutes ago</div>
 									</div>
 								</li>
+
 								<li class="media">
 									<div class="mr-3">
 										<a href="#" class="btn bg-transparent border-warning text-warning rounded-round border-2 btn-icon"><i class="icon-git-commit"></i></a>
-									</div>									
+									</div>
+									
 									<div class="media-body">
 										Add full font overrides for popovers and tooltips
 										<div class="text-muted font-size-sm">36 minutes ago</div>
 									</div>
 								</li>
+
 								<li class="media">
 									<div class="mr-3">
 										<a href="#" class="btn bg-transparent border-info text-info rounded-round border-2 btn-icon"><i class="icon-git-branch"></i></a>
-									</div>									
+									</div>
+									
 									<div class="media-body">
 										<a href="#">Chris Arney</a> created a new <span class="font-weight-semibold">Design</span> branch
 										<div class="text-muted font-size-sm">2 hours ago</div>
 									</div>
 								</li>
+
 								<li class="media">
 									<div class="mr-3">
 										<a href="#" class="btn bg-transparent border-success text-success rounded-round border-2 btn-icon"><i class="icon-git-merge"></i></a>
@@ -115,7 +126,7 @@
 							<ul class="media-list">
 								<li class="media">
 									<div class="mr-3">
-										<img src="{{ asset('assets/backend/global_assets/images/placeholders/placeholder.jpg') }}" width="36" height="36" class="rounded-circle" alt="">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 									<div class="media-body">
 										<a href="#" class="media-title font-weight-semibold">Jordana Ansley</a>
@@ -126,7 +137,7 @@
 
 								<li class="media">
 									<div class="mr-3">
-										<img src="{{ asset('assets/backend/global_assets/images/placeholders/placeholder.jpg') }}" width="36" height="36" class="rounded-circle" alt="">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 									<div class="media-body">
 										<a href="#" class="media-title font-weight-semibold">Will Brason</a>
@@ -137,7 +148,7 @@
 
 								<li class="media">
 									<div class="mr-3">
-										<img src="{{ asset('assets/backend/global_assets/images/placeholders/placeholder.jpg') }}" width="36" height="36" class="rounded-circle" alt="">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 									<div class="media-body">
 										<a href="#" class="media-title font-weight-semibold">Hanna Walden</a>
@@ -148,7 +159,7 @@
 
 								<li class="media">
 									<div class="mr-3">
-										<img src="{{ asset('assets/backend/global_assets/images/placeholders/placeholder.jpg') }}" width="36" height="36" class="rounded-circle" alt="">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 									<div class="media-body">
 										<a href="#" class="media-title font-weight-semibold">Dori Laperriere</a>
@@ -159,7 +170,7 @@
 
 								<li class="media">
 									<div class="mr-3">
-										<img src="{{ asset('assets/backend/global_assets/images/placeholders/placeholder.jpg') }}" width="36" height="36" class="rounded-circle" alt="">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 									<div class="media-body">
 										<a href="#" class="media-title font-weight-semibold">Vanessa Aurelius</a>
@@ -194,7 +205,7 @@
 							<ul class="media-list">
 								<li class="media">
 									<div class="mr-3 position-relative">
-										<img src="{{ asset('assets/backend/global_assets/images/placeholders/placeholder.jpg') }}" width="36" height="36" class="rounded-circle" alt="">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 
 									<div class="media-body">
@@ -211,7 +222,7 @@
 
 								<li class="media">
 									<div class="mr-3 position-relative">
-										<img src="{{ asset('assets/backend/global_assets/images/placeholders/placeholder.jpg') }}" width="36" height="36" class="rounded-circle" alt="">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 
 									<div class="media-body">
@@ -228,7 +239,7 @@
 
 								<li class="media">
 									<div class="mr-3">
-										<img src="{{ asset('assets/backend/global_assets/images/placeholders/placeholder.jpg') }}" width="36" height="36" class="rounded-circle" alt="">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 									<div class="media-body">
 										<div class="media-title">
@@ -244,7 +255,7 @@
 
 								<li class="media">
 									<div class="mr-3">
-										<img src="{{ asset('assets/backend/global_assets/images/placeholders/placeholder.jpg') }}" width="36" height="36" class="rounded-circle" alt="">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 									<div class="media-body">
 										<div class="media-title">
@@ -260,7 +271,7 @@
 
 								<li class="media">
 									<div class="mr-3">
-										<img src="{{ asset('assets/backend/global_assets/images/placeholders/placeholder.jpg') }}" width="36" height="36" class="rounded-circle" alt="">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
 									</div>
 									<div class="media-body">
 										<div class="media-title">
@@ -284,7 +295,7 @@
 
 				<li class="nav-item dropdown dropdown-user">
 					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
-						<img src="{{ asset('assets/backend/global_assets/images/placeholders/placeholder.jpg') }}" class="rounded-circle" alt="">
+						<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" alt="">
 						<span>Victoria</span>
 					</a>
 
