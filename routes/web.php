@@ -7,6 +7,7 @@
 Route::resource('admin/posts', 'Admin\\PostsController');
 
 Route::view('admin','admin.students.form')->name('student.create');
+Route::view('main','layouts.backend.mainlayouts')->name('main');
 
 
 // Route::group(['prefix' => LaravelLocalization::setLocale() , 'middleware' => ['localeSessionRedirect', 'localizationRedirect']] , function(){
@@ -160,3 +161,6 @@ Route::group(['prefix' => LaravelLocalization::setLocale() , 'middleware' => ['l
 // Route::get('categorie/{id}/delete', 'CategorieController@destroy');
 // Route::get('categorie/{id}/view', 'CategorieController@getById');
 // Route::get('categorie/pluck', 'CategorieController@pluck');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
