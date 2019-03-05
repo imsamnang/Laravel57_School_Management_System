@@ -9,28 +9,28 @@ class InterFaceBind extends ServiceProvider
     public function register()
     {
         $this->app->bind(
-            'App\Application\Repository\InterFaces\UserInterface',
-            'App\Application\Repository\Eloquent\UserEloquent'
+            'App\Repository\InterFaces\UserInterface',
+            'App\Repository\Eloquent\UserEloquent'
         );
         $this->app->bind(
-            'App\Application\Repository\InterFaces\GroupInterface',
-            'App\Application\Repository\Eloquent\GroupEloquent'
+            'App\Repository\InterFaces\GroupInterface',
+            'App\Repository\Eloquent\GroupEloquent'
         );
         $this->app->bind(
-            'App\Application\Repository\InterFaces\RolesInterface',
-            'App\Application\Repository\Eloquent\RolesEloquent'
+            'App\Repository\InterFaces\RolesInterface',
+            'App\Repository\Eloquent\RolesEloquent'
         );
         $this->app->bind(
-            'App\Application\Repository\InterFaces\HomeInterface',
-            'App\Application\Repository\Eloquent\HomeEloquent'
+            'App\Repository\InterFaces\HomeInterface',
+            'App\Repository\Eloquent\HomeEloquent'
         );
         $this->app->bind(
-            'App\Application\Repository\InterFaces\MenuInterface',
-            'App\Application\Repository\Eloquent\MenuEloquent'
+            'App\Repository\InterFaces\MenuInterface',
+            'App\Repository\Eloquent\MenuEloquent'
         );
         $this->app->bind(
-            'App\Application\Repository\InterFaces\PageInterface',
-            'App\Application\Repository\Eloquent\PageEloquent'
+            'App\Repository\InterFaces\PageInterface',
+            'App\Repository\Eloquent\PageEloquent'
         );
 
 

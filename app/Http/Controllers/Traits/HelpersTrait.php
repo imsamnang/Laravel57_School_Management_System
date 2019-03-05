@@ -1,6 +1,6 @@
 <?php
 
-namespace  App\Application\Controllers\Traits;
+namespace  App\Http\Controllers\Traits;
 
 trait HelpersTrait{
 

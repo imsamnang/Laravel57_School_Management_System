@@ -8,7 +8,7 @@
 			<a href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard_dr"><div class="pull-left"><i class="ti-dashboard mr-20"></i><span class="right-nav-text">Dashboard</span></div><div class="pull-right"><i class="ti-angle-down"></i></div><div class="clearfix"></div></a>
 			<ul id="dashboard_dr" class="collapse collapse-level-1">
 				<li>
-					<a href="index.html">Analytical</a>
+					<a href="{{route('student.create')}}">Add Student</a>
 				</li>
 				<li>
 					<a href="index2.html"><div class="pull-left"><span>Cryptocurrency</span></div><div class="pull-right"><span class="label label-success">Hot</span></div><div class="clearfix"></div></a>

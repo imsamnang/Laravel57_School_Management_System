@@ -18,13 +18,11 @@ class User extends Authenticatable
     //     'name', 'email', 'password', 'group_id' ,'api_token'
     // ];
 
-    protected $hidden = [
-        'password', 'remember_token',
-    ];
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-     protected $hidden = [
+    
+    protected $hidden = [
         'password', 'remember_token',
     ];
 

@@ -22,7 +22,24 @@
 			</form>
 		</div>
 		<div id="mobile_only_nav" class="mobile-only-nav pull-right">
-			<ul class="nav navbar-right top-nav pull-right">						
+			<ul class="nav navbar-right top-nav pull-right">		
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" data-animation="scale-up" aria-expanded="false" role="button" title="Languages">
+					<img width="22.66" height="16" src="http://elegant.test/assets/flags/america.png">
+					</a>
+					<ul class="dropdown-menu" role="menu">
+						<li role="presentation">
+							<a href="#" role="menuitem">
+							<img src="http://elegant.test/assets/flags/america.png" width="18.66" height="14">  English
+							</a>
+						</li>			
+						<li role="presentation">
+							<a href="#" role="menuitem">
+							<img src="http://elegant.test/assets/flags/1475429828.png" width="18.66" height="14">  Khmer
+							</a>
+						</li>			
+					</ul>
+				</li>				
 				<li>
 					<a id="open_right_sidebar" href="#"><i class="ti-settings  top-nav-icon"></i></a>
 				</li>

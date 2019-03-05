@@ -64,10 +64,11 @@ class Kernel extends HttpKernel
         'admin' => \App\Http\Middleware\AdminMiddleware::class,
         'admin-permissions' => \App\Http\Middleware\AdminPermissionMiddleware::class,
         'website-permissions' => \App\Http\Middleware\WebsitePermissionMiddleware::class,
+        'authApi' => \App\Http\Middleware\ApiMiddleware::class,  
         'localize' => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRoutes::class,
         'localizationRedirect' => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter::class,
         'localeSessionRedirect' => \Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect::class,
-        'authApi' => \App\Http\Middleware\ApiMiddleware::class,        
+        'localeViewPath' => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationViewPath::class
     ];
 
     /**

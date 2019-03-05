@@ -1,0 +1,1 @@
+{{ trans('admin.Edit All Language') }}

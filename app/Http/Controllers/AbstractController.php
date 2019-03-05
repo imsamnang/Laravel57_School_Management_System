@@ -2,20 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Application\Controllers\Traits\ExceptionTrait;
-use App\Application\Controllers\Traits\HelpersTrait;
-use App\Application\Controllers\Traits\MainProcessTrait;
-use App\Application\Controllers\Traits\ModelRelationTrait;
-use App\Application\Controllers\Traits\PermissionTrait;
-use App\Application\Controllers\Traits\UploadTrait;
-use App\Application\Model\Log;
-use App\Application\PermissionTraits\PermissionControl;
+use App\Model\Log;
+use App\Http\Controllers\Traits\HelpersTrait;
 use Illuminate\Database\Eloquent\Model;
-
 abstract class AbstractController extends Controller
 {
 
-    use  PermissionTrait , UploadTrait , MainProcessTrait , HelpersTrait , ModelRelationTrait , ExceptionTrait;
+    use HelpersTrait;
 
     public $model;
     protected  $log;
