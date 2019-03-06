@@ -1,126 +1,86 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<title>@yield('pagetitle', 'Master Dashboard Page')</title>
-	<meta name="description" content="Admintres is a Dashboard & Admin Site Responsive Template by hencework." />
-	<meta name="keywords" content="admin, admin dashboard, admin template, cms, crm, Admintres Admin, Admintresadmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application" />
-	<meta name="author" content="hencework"/>	
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="{{asset('assets/backend/favicon.ico')}}">
-	<link rel="icon" href="{{asset('assets/backend/favicon.ico')}}" type="image/x-icon">
-	<!-- Bootstrap CSS -->
-	<link href="{{asset('assets/backend/vendors/bower_components/bootstrap/dist/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css"/>		
-	<!-- Bootstrap Colorpicker CSS -->
-	<link href="{{asset('assets/backend/vendors/bower_components/mjolnic-bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css')}}" rel="stylesheet" type="text/css"/>		
-	<!-- select2 CSS -->
-	<link href="{{asset('assets/backend/vendors/bower_components/select2/dist/css/select2.min.css')}}" rel="stylesheet" type="text/css"/>		
-	<!-- switchery CSS -->
-	<link href="{{asset('assets/backend/vendors/bower_components/switchery/dist/switchery.min.css')}}" rel="stylesheet" type="text/css"/>		
-	<!-- bootstrap-select CSS -->
-	<link href="{{asset('assets/backend/vendors/bower_components/bootstrap-select/dist/css/bootstrap-select.min.css')}}" rel="stylesheet" type="text/css"/>		
-	<!-- bootstrap-tagsinput CSS -->
-	<link href="{{asset('assets/backend/vendors/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.css')}}" rel="stylesheet" type="text/css"/>		
-	<!-- bootstrap-touchspin CSS -->
-	<link href="{{asset('assets/backend/vendors/bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css')}}" rel="stylesheet" type="text/css"/>		
-	<!-- multi-select CSS -->
-	<link href="{{asset('assets/backend/vendors/bower_components/multiselect/css/multi-select.css')}}" rel="stylesheet" type="text/css"/>		
-	<!-- Bootstrap Switches CSS -->
-	<link href="{{asset('assets/backend/vendors/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css')}}" rel="stylesheet" type="text/css"/>		
-	<!-- Bootstrap Datetimepicker CSS -->
-	<link href="{{asset('assets/backend/vendors/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css')}}" rel="stylesheet" type="text/css"/>		
-	<!-- Custom CSS -->
-	<link href="{{asset('assets/backend/dist/css/style.css')}}" rel="stylesheet" type="text/css">
-	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>@yield('pagetitle', 'Master Page Layout')</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="{{asset('assets/backend/global_assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
+	<link href="{{asset('assets/backend/global_assets/css/bootstrap_limitless.min.css')}}" rel="stylesheet" type="text/css">
+	<link href="{{asset('assets/backend/global_assets/css/icons/icomoon/styles.css')}}" rel="stylesheet" type="text/css">
+	<link href="{{asset('assets/backend/global_assets/css/layout.min.css')}}" rel="stylesheet" type="text/css">
+	<link href="{{asset('assets/backend/global_assets/css/components.min.css')}}" rel="stylesheet" type="text/css">
+	<link href="{{asset('assets/backend/global_assets/css/colors.min.css')}}" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
 	@stack('css')
 </head>
 
 <body>
-	<!--Preloader-->
-	<div class="preloader-it">
-		<div class="la-anim-1"></div>
-	</div>
-	<!--/Preloader-->
-  <div class="wrapper theme-2-active navbar-top-light">
-		<!-- Top Menu Items -->
-		@include('layouts.includes.backend.topmenu')
-		<!-- /Top Menu Items -->
-
-			<!-- Left Sidebar Menu -->
-			@include('layouts.includes.backend.left_sidebar')
-			<!-- /Left Sidebar Menu -->
-			
-			<!-- Right Sidebar Menu -->
-			@include('layouts.includes.backend.right_sidebar')
-			<!-- /Right Sidebar Menu -->	
-       
-		<!-- Main Content -->
-		<div class="page-wrapper">
-      <div class="container">				
-				<!-- Title -->
-				<div class="row heading-bg">
-					<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-						<h5 class="txt-dark">blank page</h5>
-					</div>
-					<!-- Breadcrumb -->
-				@include('layouts.includes.backend.breadcrumb')
-					<!-- /Breadcrumb -->
-				</div>
-				<!-- /Title -->		
-
-			<!-- Main Content -->	
-				<div class="row">
+	<!-- Main navbar -->
+		@include('layouts.backend.includes.topheader')
+	<!-- /main navbar -->
+	<!-- Page content -->
+	<div class="page-content">
+		<!-- Main sidebar -->
+		@include('layouts.backend.includes.left_sidebar')
+		<!-- /main sidebar -->
+		<!-- Main content -->
+		<div class="content-wrapper">
+			<!-- Page header -->
+			@include('layouts.backend.includes.pageheader')
+			<!-- /page header -->
+			<!-- Content area -->
+			<div class="content">
+				<!-- Basic setup -->
 					@yield('main-content')
-				</div>
-			<!-- Main Content -->	
-				<!-- Footer -->
-				@include('layouts.includes.backend.footer')
-				<!-- /Footer -->
+	      <!-- /basic setup -->
 			</div>
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light">
+				<div class="text-center d-lg-none w-100">
+					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+						<i class="icon-unfold mr-2"></i>
+						Footer
+					</button>
+				</div>
+
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<span class="navbar-text">
+						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</span>
+
+					<ul class="navbar-nav ml-lg-auto">
+						<li class="nav-item"><a href="https://kopyov.ticksy.com/" class="navbar-nav-link" target="_blank"><i class="icon-lifebuoy mr-2"></i> Support</a></li>
+						<li class="nav-item"><a href="http://demo.interface.club/limitless/docs/" class="navbar-nav-link" target="_blank"><i class="icon-file-text2 mr-2"></i> Docs</a></li>
+						<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /footer -->
 		</div>
-        <!-- /Main Content -->
-    </div>
-    <!-- /#wrapper -->	
+		<!-- /content wrapper -->
+	</div>
+	<!-- /page content -->
 
-		
-		<!-- jQuery -->
-		<script src="{{asset('assets/backend/vendors/bower_components/jquery/dist/jquery.min.js')}}"></script>		
-		<!-- Bootstrap Core JavaScript -->
-		<script src="{{asset('assets/backend/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>		
-		<!-- Moment JavaScript -->
-		<script src="{{asset('assets/backend/vendors/bower_components/moment/min/moment-with-locales.min.js')}}"></script>		
-		<!-- Bootstrap Colorpicker JavaScript -->
-		<script src="{{asset('assets/backend/vendors/bower_components/mjolnic-bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js')}}"></script>
-		<!-- Switchery JavaScript -->
-		<script src="{{asset('assets/backend/vendors/bower_components/switchery/dist/switchery.min.js')}}"></script>		
-		<!-- Select2 JavaScript -->
-		<script src="{{asset('assets/backend/vendors/bower_components/select2/dist/js/select2.full.min.js')}}"></script>	
-		<!-- Bootstrap Select JavaScript -->
-		<script src="{{asset('assets/backend/vendors/bower_components/bootstrap-select/dist/js/bootstrap-select.min.js')}}"></script>
-		<!-- Bootstrap Tagsinput JavaScript -->
-		<script src="{{asset('assets/backend/vendors/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js')}}"></script>		
-		<!-- Bootstrap Touchspin JavaScript -->
-		<script src="{{asset('assets/backend/vendors/bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js')}}"></script>		
-		<!-- Multiselect JavaScript -->
-		<script src="{{asset('assets/backend/vendors/bower_components/multiselect/js/jquery.multi-select.js')}}"></script>		 
-		<!-- Bootstrap Switch JavaScript -->
-		<script src="{{asset('assets/backend/vendors/bower_components/bootstrap-switch/dist/js/bootstrap-switch.min.js')}}"></script>
-		<!-- Bootstrap Datetimepicker JavaScript -->
-		<script src="{{asset('assets/backend/vendors/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js')}}"></script>		
-		<!-- Form Advance Init JavaScript -->
-		<script src="{{asset('assets/backend/dist/js/form-advance-data.js')}}"></script>		
-		<!-- Slimscroll JavaScript -->
-		<script src="{{asset('assets/backend/dist/js/jquery.slimscroll.js')}}"></script>	
-		<!-- Fancy Dropdown JS -->
-		<script src="{{asset('assets/backend/dist/js/dropdown-bootstrap-extended.js')}}"></script>		
-		<!-- Owl JavaScript -->
-		<script src="{{asset('assets/backend/vendors/bower_components/owl.carousel/dist/owl.carousel.min.js')}}"></script>	
-		<!-- Init JavaScript -->
-		<script src="{{asset('assets/backend/dist/js/init.js')}}"></script>
+<!-- Core JS files -->
+	<script src="{{asset('assets/backend/global_assets/js/main/jquery.min.js')}}"></script>
+	<script src="{{asset('assets/backend/global_assets/js/main/bootstrap.bundle.min.js')}}"></script>
+	<script src="{{asset('assets/backend/global_assets/js/plugins/loaders/blockui.min.js')}}"></script>
+	<!-- /core JS files -->
+	<!-- Theme JS files -->
+	<script src="{{asset('assets/backend/global_assets/js/plugins/forms/wizards/steps.min.js')}}"></script>
+	<script src="{{asset('assets/backend/global_assets/js/plugins/forms/selects/select2.min.js')}}"></script>
+	<script src="{{asset('assets/backend/global_assets/js/plugins/forms/styling/uniform.min.js')}}"></script>
+	<script src="{{asset('assets/backend/global_assets/js/plugins/forms/inputs/inputmask.js')}}"></script>
+	<script src="{{asset('assets/backend/global_assets/js/plugins/forms/validation/validate.min.js')}}"></script>
+	<script src="{{asset('assets/backend/global_assets/js/plugins/extensions/cookie.js')}}"></script>
+	<script src="{{asset('assets/backend/global_assets/js/app.js')}}"></script>
+	<script src="{{asset('assets/backend/global_assets/js/demo_pages/form_wizard.js')}}"></script>
+	<!-- /theme JS files -->
+
 	@stack('js')
-	
 </body>
-
 </html>
