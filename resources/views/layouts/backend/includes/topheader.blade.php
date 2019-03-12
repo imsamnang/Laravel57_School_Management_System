@@ -308,6 +308,23 @@
 						<a href="#" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
 					</div>
 				</li>
+
+				<li class="nav-item dropdown dropdown-user">
+					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
+						<img src="{{asset('assets/backend/global_assets/images/placeholders/placeholder.jpg')}}" class="rounded-circle" alt="">
+						<span>Languages</span>
+					</a>
+
+					<div class="dropdown-menu dropdown-menu-right">
+						<a href="lang/en" class="dropdown-item"><i class="icon-user-plus"></i> English</a>
+						<a href="lang/kh" class="dropdown-item"><i class="icon-coins"></i> Khmer</a>
+						<a href="lang/fr" class="dropdown-item"><i class="icon-comment-discussion"></i> French</a>
+						<div class="dropdown-divider"></div>
+						<a href="lang/th" class="dropdown-item"><i class="icon-cog5"></i> Thai</a>
+						<a href="lang/de" class="dropdown-item"><i class="icon-switch2"></i> German</a>
+					</div>
+				</li>
+
 			</ul>
 		</div>
 	</div>
