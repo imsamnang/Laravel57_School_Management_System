@@ -68,7 +68,15 @@
 				<li class="nav-item nav-item-submenu">
 					<a href="#" class="nav-link"><i class="icon-tree5"></i> <span>{{__('backend.settings')}}</span></a>
 					<ul class="nav nav-group-sub" data-submenu-title="Menu levels">
-						<li class="nav-item"><a href="{{ route('languages') }}" target="_blank" class="nav-link"><i class="icon-IE"></i> {{__('backend.settings.language')}}</a></li>
+						<li class="nav-item">
+							<a href="{{ route('languages') }}" target="_blank" class="nav-link"><i class="icon-IE"></i> {{__('backend.settings.language')}}</a>
+						</li>
+						<li class="nav-item">
+							<a href="{{ url('admin/activitylogs') }}" class="nav-link"><i class="icon-IE"></i> {{__('backend.settings.activitylogs')}}</a>
+						</li>
+						<li class="nav-item">
+							<a href="{{ url('admin/generator') }}" class="nav-link"><i class="icon-IE"></i> {{__('backend.settings.generator')}}</a>
+						</li>							
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-firefox"></i> Second level with child</a>
 							<ul class="nav nav-group-sub">

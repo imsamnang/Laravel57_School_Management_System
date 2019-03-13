@@ -7,6 +7,8 @@
     "backend.manage.teacher.add_teacher": "បន្ថែមគ្រូថ្មី",
     "backend.manage.teacher.teacher_list": "បញ្ជីឈ្មោះគ្រូទាំងអស់",
     "backend.settings": "ការកំណត់",
+    "backend.settings.activitylogs": "កំណត់ហេតុ",
+    "backend.settings.generator": "បង្កើតដោយស្វ័យប្រវត្តិ",
     "backend.settings.language": "បកប្រែភាសា",
     "student.index.id": "ល.រ",
     "student.index.name": "ឈ្មោះ"

@@ -34,3 +34,12 @@ Route::get('/lang/{lang}', array(
 ))->name('langChange');
 //End of Language Route
 
+
+//Crud Generator UI
+Route::resource('admin/activitylogs', 'Admin\ActivityLogsController');
+
+Route::get('admin/generator', ['uses' => 'Admin\ProcessController@getGenerator']);
+
+Route::post('admin/generator', ['uses' => 'Admin\ProcessController@postGenerator']);
+
+Route::resource('admin/posts', 'Admin\\PostsController');

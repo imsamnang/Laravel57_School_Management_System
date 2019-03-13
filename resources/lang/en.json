@@ -7,6 +7,8 @@
     "backend.manage.teacher.add_teacher": "Add New Teacher",
     "backend.manage.teacher.teacher_list": "Teacher Lists",
     "backend.settings": "Settings",
+    "backend.settings.activitylogs": "Activity Logs",
+    "backend.settings.generator": "Generator",
     "backend.settings.language": "Languages Translator",
     "student.index.id": "ID",
     "student.index.name": "Name"
