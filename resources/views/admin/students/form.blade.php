@@ -11,7 +11,7 @@
   <div class="card">
 
   	<div class="card-header bg-white header-elements-inline">
-  		<h6 class="card-title">Basic example</h6>
+  		<h6 class="card-title">ចុះឈ្មោះសិស្ស (ទម្រង់ T1)</h6>
   		<div class="header-elements">
   			<div class="list-icons">
   				<a class="list-icons-item" data-action="collapse"></a>
@@ -22,7 +22,7 @@
   	</div>
 
 	<form class="wizard-form steps-basic form-horizontal" action="#" data-fouc>
-		<h6>Personal data</h6>	
+		<h6>ជីវប្រវត្តិសិស្ស</h6>	
 		<fieldset>
 
 
@@ -228,11 +228,10 @@
 					</div>
 				</div>
 			
-
 		</fieldset>
 
 		{{-- End Personal Data --}}
-<h6>Personal data</h6>	
+		<h6>កម្រិតវប្បធម៌ទូទៅ និងការអបរំ និងបណ្តុះបណ្តាល</h6>	
 		<fieldset>
 			<div class="row">
 				<div class="col-md-12">					
@@ -443,12 +442,10 @@
 					</div>
 				</div>
 			</div>				
-		
 		</fieldset>
 
-		
 
-		<h6>Your education</h6>
+		<h6>ព័ត៌មានការងារ</h6>
 		<fieldset>
 			<div class="row">
 				<div class="col-md-6">
@@ -687,10 +684,249 @@
 				</div>
 				
 			</div>
-
-
 		</fieldset>
-		
+
+		<h6>ការបញ្ចេញព័ត៌មានដោយស្ម័គ្រចិត្</h6>
+		<fieldset>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label >Education:</label>
+						<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc >
+							<option></option> 
+							<option value="monster">Choose here</option> 
+							<option value="linkedin">MBA</option> 
+							<option value="google">MD</option> 
+							<option value="adwords">Deploma</option> 
+						</select>
+					</div>
+				</div>
+				
+				<div class="col-md-6">
+					<label>Are you studying a general culture class?:</label>
+					<div class="row">
+						<div class="col-md-2">
+
+								<div class="form-group">
+									
+									<div class="form-check">
+										<label class="form-check-label">
+											<input type="radio" name="availability" class="form-input-styled" data-fouc>
+											Yes
+										</label>
+									</div>
+
+									
+								</div>
+						</div>
+						<div class="col-md-2">
+							<div class="form-group">
+								<div class="form-check">
+										<label class="form-check-label">
+											<input type="radio" name="availability" class="form-input-styled" data-fouc>
+											No	
+										</label>	
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<input type="text" name="pod" class="form-control" placeholder="Year">
+							</div>
+						</div>
+
+
+					</div>
+				</div>					
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-2">
+							<div class="form-group">
+									<label>Program Name - Course:</label>
+									<input type="text" name="experience-company" placeholder="" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="form-group">
+								<label >TVET?:</label>
+								<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc >
+									<option></option> 
+									<option value="choose">Choose here</option> 
+									<option value="male">Yes</option> 
+									<option value="femal">No</option> 
+								</select>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="form-group">
+								<label >Lavel:</label>
+								<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc >
+									<option></option> 
+									<option value="choose">Choose here</option> 
+									<option value="short-course">Short Course</option>
+									
+								</select>
+							</div>
+						</div>
+						<div class="col-md-1">
+							<div class="form-group">
+									<label>Year:</label>
+									<input type="text" name="experience-company" placeholder="" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="form-group">
+									<label>School Name:</label>
+									<input type="text" name="experience-company" placeholder=" " class="form-control">
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="form-group">
+									<label>Place of School:</label>
+									<input type="text" name="experience-company" placeholder=" " class="form-control">
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label >Job status:</label>
+								<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc >
+									<option></option> 
+									<option value="choose">Choose here</option> 
+									<option value="male">Yes</option> 
+									<option value="femal">No</option> 
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+									<label>What is your job?:</label>
+									<input type="text" name="experience-company" placeholder=" " class="form-control">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label >Type of wage:</label>
+								<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc >
+									<option></option> 
+									<option value="choose">Choose here</option> 
+									<option value="male">Monthly</option> 
+									<option value="femal">Weekly</option> 
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+									<label>Monthly Personal Income (in USD):</label>
+									<input type="text" name="experience-company" placeholder=" " class="form-control">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+								<label >Type of work:</label>
+								<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc >
+									<option></option> 
+									<option value="choose">Choose here</option> 
+									<option value="bose">Bose</option> 
+									<option value="simple staff">Simple Staff</option>
+								</select>
+						</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+							<label>Monthly Personal Income (in USD):</label>
+							<input type="text" name="experience-company" placeholder=" " class="form-control">
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label >reason for preventing job:</label>
+								<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc >
+									<option></option> 
+									<option value="choose">Choose here</option> 
+									<option value="sick">Sick</option> 
+									<option value="notime">Not enough time</option> 
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label >Are you an orphan?</label>
+								<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc >
+									<option></option> 
+									<option value="choose">Choose here</option> 
+									<option value="yes">Yes</option> 
+									<option value="no">No</option> 
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="form-group">
+								<label >Disability type:</label>
+								<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc >
+									<option></option> 
+									<option value="choose">Choose here</option> 
+									<option value="see">Seeing</option> 
+									<option value="animate">Animate</option> 
+								</select>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label >When was the disability?</label>
+								<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc >
+									<option></option> 
+									<option value="choose">Choose here</option> 
+									<option value="was-born">Children</option> 
+									<option value="adult">adult</option> 
+								</select>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label >Indigenous peoples</label>
+								<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc >
+									<option></option> 
+									<option value="koy">Koy</option> 
+									<option value="was-born">phnong</option> 
+									<option value="adult">Tompong</option> 
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</fieldset>
+
 	</form>
 
   </div>

@@ -41,7 +41,6 @@
 		<!-- Main navigation -->
 		<div class="card card-sidebar-mobile">
 			<ul class="nav nav-sidebar" data-nav-type="accordion">
-
 				<!-- Main -->
 				<li class="nav-item">
 					<a href="{{ route('home') }}" class="nav-link active">
@@ -53,9 +52,23 @@
 				</li>
 				<!-- Layout -->
 				<li class="nav-item nav-item-submenu">
-					<a href="#" class="nav-link"><i class="icon-tree5"></i> <span>Languages</span></a>
+					<a href="#" class="nav-link"><i class="icon-tree5"></i> <span>Manage Students</span></a>
 					<ul class="nav nav-group-sub" data-submenu-title="Menu levels">
-						<li class="nav-item"><a href="{{ route('languages') }}" class="nav-link"><i class="icon-IE"></i> Language Translator</a></li>
+						<li class="nav-item"><a href="{{ route('languages') }}" class="nav-link"><i class="icon-IE"></i> Add Student</a></li>
+						<li class="nav-item"><a href="#" class="nav-link"><i class="icon-chrome"></i> Student Lists</a></li>
+					</ul>
+				</li>
+				<li class="nav-item nav-item-submenu">
+					<a href="#" class="nav-link"><i class="icon-tree5"></i> <span>Manage Teachers</span></a>
+					<ul class="nav nav-group-sub" data-submenu-title="Menu levels">
+						<li class="nav-item"><a href="{{ route('languages') }}" class="nav-link"><i class="icon-IE"></i> Add New Teacher</a></li>
+						<li class="nav-item"><a href="#" class="nav-link"><i class="icon-chrome"></i> Teacher Lists</a></li>
+					</ul>
+				</li>				
+				<li class="nav-item nav-item-submenu">
+					<a href="#" class="nav-link"><i class="icon-tree5"></i> <span>Settings</span></a>
+					<ul class="nav nav-group-sub" data-submenu-title="Menu levels">
+						<li class="nav-item"><a href="{{ route('languages') }}" target="_blank" class="nav-link"><i class="icon-IE"></i> Language Translator</a></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-firefox"></i> Second level with child</a>
 							<ul class="nav nav-group-sub">
@@ -77,8 +90,6 @@
 			</ul>
 		</div>
 		<!-- /main navigation -->
-
 	</div>
-	<!-- /sidebar content -->
-	
+	<!-- /sidebar content -->	
 </div>
