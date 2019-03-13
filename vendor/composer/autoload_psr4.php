@@ -61,7 +61,9 @@ return array(
     'Dimsav\\Translatable\\' => array($vendorDir . '/dimsav/laravel-translatable/src/Translatable'),
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
     'Cron\\' => array($vendorDir . '/dragonmantank/cron-expression/src/Cron'),
+    'Collective\\Html\\' => array($vendorDir . '/laravelcollective/html/src'),
     'BeyondCode\\DumpServer\\' => array($vendorDir . '/beyondcode/laravel-dump-server/src'),
+    'Appzcoder\\CrudGenerator\\' => array($vendorDir . '/appzcoder/crud-generator/src'),
     'App\\' => array($baseDir . '/app'),
     '' => array($vendorDir . '/nesbot/carbon/src'),
 );

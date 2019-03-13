@@ -27,6 +27,7 @@ class ComposerStaticInitb5bd0b245b632fba01fae6db22694c2c
         '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        'f18cc91337d49233e5754e93f3ed9ec3' => __DIR__ . '/..' . '/laravelcollective/html/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         '0d8253363903f0ac7b0978dcde4e28a0' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/helpers.php',
@@ -147,6 +148,7 @@ class ComposerStaticInitb5bd0b245b632fba01fae6db22694c2c
         'C' => 
         array (
             'Cron\\' => 5,
+            'Collective\\Html\\' => 16,
         ),
         'B' => 
         array (
@@ -154,6 +156,7 @@ class ComposerStaticInitb5bd0b245b632fba01fae6db22694c2c
         ),
         'A' => 
         array (
+            'Appzcoder\\CrudGenerator\\' => 24,
             'App\\' => 4,
         ),
     );
@@ -382,9 +385,17 @@ class ComposerStaticInitb5bd0b245b632fba01fae6db22694c2c
         array (
             0 => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron',
         ),
+        'Collective\\Html\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravelcollective/html/src',
+        ),
         'BeyondCode\\DumpServer\\' => 
         array (
             0 => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src',
+        ),
+        'Appzcoder\\CrudGenerator\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/appzcoder/crud-generator/src',
         ),
         'App\\' => 
         array (
@@ -436,10 +447,13 @@ class ComposerStaticInitb5bd0b245b632fba01fae6db22694c2c
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\LanguageController' => __DIR__ . '/../..' . '/app/Http/Controllers/LanguageController.php',
+        'App\\Http\\Controllers\\LanguageTranslationController' => __DIR__ . '/../..' . '/app/Http/Controllers/LanguageTranslationController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
+        'App\\Http\\Middleware\\LanguageSwitcher' => __DIR__ . '/../..' . '/app/Http/Middleware/LanguageSwitcher.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
@@ -450,6 +464,15 @@ class ComposerStaticInitb5bd0b245b632fba01fae6db22694c2c
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
+        'Appzcoder\\CrudGenerator\\Commands\\CrudApiCommand' => __DIR__ . '/..' . '/appzcoder/crud-generator/src/Commands/CrudApiCommand.php',
+        'Appzcoder\\CrudGenerator\\Commands\\CrudApiControllerCommand' => __DIR__ . '/..' . '/appzcoder/crud-generator/src/Commands/CrudApiControllerCommand.php',
+        'Appzcoder\\CrudGenerator\\Commands\\CrudCommand' => __DIR__ . '/..' . '/appzcoder/crud-generator/src/Commands/CrudCommand.php',
+        'Appzcoder\\CrudGenerator\\Commands\\CrudControllerCommand' => __DIR__ . '/..' . '/appzcoder/crud-generator/src/Commands/CrudControllerCommand.php',
+        'Appzcoder\\CrudGenerator\\Commands\\CrudLangCommand' => __DIR__ . '/..' . '/appzcoder/crud-generator/src/Commands/CrudLangCommand.php',
+        'Appzcoder\\CrudGenerator\\Commands\\CrudMigrationCommand' => __DIR__ . '/..' . '/appzcoder/crud-generator/src/Commands/CrudMigrationCommand.php',
+        'Appzcoder\\CrudGenerator\\Commands\\CrudModelCommand' => __DIR__ . '/..' . '/appzcoder/crud-generator/src/Commands/CrudModelCommand.php',
+        'Appzcoder\\CrudGenerator\\Commands\\CrudViewCommand' => __DIR__ . '/..' . '/appzcoder/crud-generator/src/Commands/CrudViewCommand.php',
+        'Appzcoder\\CrudGenerator\\CrudGeneratorServiceProvider' => __DIR__ . '/..' . '/appzcoder/crud-generator/src/CrudGeneratorServiceProvider.php',
         'BeyondCode\\DumpServer\\DumpServerCommand' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/DumpServerCommand.php',
         'BeyondCode\\DumpServer\\DumpServerServiceProvider' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/DumpServerServiceProvider.php',
         'BeyondCode\\DumpServer\\Dumper' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/Dumper.php',
@@ -460,6 +483,13 @@ class ComposerStaticInitb5bd0b245b632fba01fae6db22694c2c
         'Carbon\\Exceptions\\InvalidDateException' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Exceptions/InvalidDateException.php',
         'Carbon\\Laravel\\ServiceProvider' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Laravel/ServiceProvider.php',
         'Carbon\\Translator' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Translator.php',
+        'Collective\\Html\\Componentable' => __DIR__ . '/..' . '/laravelcollective/html/src/Componentable.php',
+        'Collective\\Html\\Eloquent\\FormAccessible' => __DIR__ . '/..' . '/laravelcollective/html/src/Eloquent/FormAccessible.php',
+        'Collective\\Html\\FormBuilder' => __DIR__ . '/..' . '/laravelcollective/html/src/FormBuilder.php',
+        'Collective\\Html\\FormFacade' => __DIR__ . '/..' . '/laravelcollective/html/src/FormFacade.php',
+        'Collective\\Html\\HtmlBuilder' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlBuilder.php',
+        'Collective\\Html\\HtmlFacade' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlFacade.php',
+        'Collective\\Html\\HtmlServiceProvider' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlServiceProvider.php',
         'CreateLanguages' => __DIR__ . '/../..' . '/database/seeds/CreateLanguages.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/CronExpression.php',
@@ -470,6 +500,7 @@ class ComposerStaticInitb5bd0b245b632fba01fae6db22694c2c
         'Cron\\HoursField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/HoursField.php',
         'Cron\\MinutesField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MinutesField.php',
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
+        'CrudGeneratorTest' => __DIR__ . '/..' . '/appzcoder/crud-generator/tests/CrudGeneratorTest.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
         'DeepCopy\\Exception\\CloneException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',
@@ -1986,6 +2017,7 @@ class ComposerStaticInitb5bd0b245b632fba01fae6db22694c2c
         'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/Highlighter.php',
         'JsonSerializable' => __DIR__ . '/..' . '/nesbot/carbon/src/JsonSerializable.php',
+        'Kernel' => __DIR__ . '/..' . '/appzcoder/crud-generator/tests/Kernel.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
@@ -4046,6 +4078,7 @@ class ComposerStaticInitb5bd0b245b632fba01fae6db22694c2c
         'Symfony\\Polyfill\\Ctype\\Ctype' => __DIR__ . '/..' . '/symfony/polyfill-ctype/Ctype.php',
         'Symfony\\Polyfill\\Mbstring\\Mbstring' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/Mbstring.php',
         'Symfony\\Polyfill\\Php72\\Php72' => __DIR__ . '/..' . '/symfony/polyfill-php72/Php72.php',
+        'TestCase' => __DIR__ . '/..' . '/appzcoder/crud-generator/tests/TestCase.php',
         'Tests\\CreatesApplication' => __DIR__ . '/../..' . '/tests/CreatesApplication.php',
         'Tests\\Feature\\ExampleTest' => __DIR__ . '/../..' . '/tests/Feature/ExampleTest.php',
         'Tests\\TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',

@@ -24,58 +24,52 @@
 	<form class="wizard-form steps-basic form-horizontal" action="#" data-fouc>
 		<h6>ជីវប្រវត្តិសិស្ស</h6>	
 		<fieldset>
-
-
 			<div class="form-group row">
-					<label class="col-form-label col-lg-2">នាមត្រកូល​:</label>
-					<div class="col-lg-4">
-						<input type="text" class="form-control">
-					</div>
-					<label class="col-form-label col-lg-2">នាមខ្លួន:</label>
-					<div class="col-lg-4">
-						<input type="text" class="form-control">
-					</div>
-					{{-- English Name --}}
-					<label class="col-form-label col-lg-2">Family Name:</label>
-					<div class="col-lg-4">
-						<input type="text" class="form-control">
-					</div>
-					<label class="col-form-label col-lg-2">Firs Name:</label>
-					<div class="col-lg-4">
-						<input type="text" class="form-control">
-					</div>
+				<label class="col-form-label col-lg-2">នាមត្រកូល​:</label>
+				<div class="col-lg-4">
+					<input type="text" class="form-control">
+				</div>
+				<label class="col-form-label col-lg-2">នាមខ្លួន:</label>
+				<div class="col-lg-4">
+					<input type="text" class="form-control">
+				</div>
+				{{-- English Name --}}
+				<label class="col-form-label col-lg-2">Family Name:</label>
+				<div class="col-lg-4">
+					<input type="text" class="form-control">
+				</div>
+				<label class="col-form-label col-lg-2">Firs Name:</label>
+				<div class="col-lg-4">
+					<input type="text" class="form-control">
+				</div>
 			</div>
-
-
-{{-- Row2 --}}
-			<div class="form-group row">
-					<label class="col-form-label col-lg-2">Gender:</label>
-					<div class="col-lg-4">
-						<select name="gender" data-placeholder="Choose gender" class="form-control form-control-select2 " data-fouc >
-							<option></option> 
-							<option value="male">Male</option> 
-							<option value="femal">Female</option>					
-						</select>
-					</div>			
-					<label class="col-form-label col-lg-2">Date Of Birth:</label>
-					<div class="col-lg-4">
-						<input type="text" name="dob" class="form-control">
-					</div>
-					
-			</div>
-{{-- Row3 --}}
-			<div class="form-group row">
-					<label class="col-form-label col-lg-2">លេខអត្តសញ្ញាប័ណ្ណ:</label>
-					<div class="col-lg-4">
-						<input type="text" name="identified_card_id" class="form-control">
-					</div>			
-					<label class="col-form-label col-lg-2">អត្ថលេខសិស្ស/StuID:</label>
-					<div class="col-lg-4">
-						<input type="text" name="student_id" class="form-control">
-					</div>
-					
-			</div>
-{{-- Row4 --}}
+		{{-- Row2 --}}
+		<div class="form-group row">
+				<label class="col-form-label col-lg-2">Gender:</label>
+				<div class="col-lg-4">
+					<select name="gender" data-placeholder="Choose gender" class="form-control form-control-select2 " data-fouc >
+						<option></option> 
+						<option value="male">Male</option> 
+						<option value="femal">Female</option>					
+					</select>
+				</div>			
+				<label class="col-form-label col-lg-2">Date Of Birth:</label>
+				<div class="col-lg-4">
+					<input type="text" name="dob" class="form-control">
+				</div>
+		</div>
+		{{-- Row3 --}}
+		<div class="form-group row">
+				<label class="col-form-label col-lg-2">លេខអត្តសញ្ញាប័ណ្ណ:</label>
+				<div class="col-lg-4">
+					<input type="text" name="identified_card_id" class="form-control">
+				</div>			
+				<label class="col-form-label col-lg-2">អត្ថលេខសិស្ស/StuID:</label>
+				<div class="col-lg-4">
+					<input type="text" name="student_id" class="form-control">
+				</div>
+		</div>
+		{{-- Row4 --}}
 		<div class="row">		
 				<div class="col-md-6">
 					<div class="row">
@@ -121,115 +115,111 @@
 					</div>
 				</div>		
 		</div>
-
-			<div class="col-md-12">
-				<div class="row">
-				<div class="col-md-6">
-					<div class="form-group">
-						<label>Precent Address:</label>
-						<input type="text" name="pod" class="form-control" placeholder="Type your Present Address">
-					</div>
+		<div class="col-md-12">
+			<div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+					<label>Precent Address:</label>
+					<input type="text" name="pod" class="form-control" placeholder="Type your Present Address">
 				</div>
-				<div class="col-md-6">
-					<div class="form-group">
-						<label>Precent Address:</label>
-						<input type="text" name="pod" class="form-control" placeholder="Type your Present Address">
-					</div>
-				</div>
-			</div>			
 			</div>
-{{-- Option Address --}}
-		
-				<div class="col-md-12">
-					<div class="row">
-						<div class="col-md-4">
-							<div class="form-group">
-								<label >Province:</label>
-								<select name="source" data-placeholder="Choose Province..." class="form-control form-control-select2" data-fouc >
-									<option></option> 
-									<option value="monster">Choose here</option> 
-									<option value="linkedin">Single</option> 
-									<option value="google">Married</option> 
-									<option value="adwords">Divorce</option> 
-									<option value="other">Widow/Widower</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="form-group">
-								<label >District:</label>
-								<select name="source" data-placeholder="Choose district..." class="form-control form-control-select2" data-fouc >
-									<option></option> 
-									<option value="monster">Choose here</option> 
-									<option value="linkedin">Single</option> 
-									<option value="google">Married</option> 
-									<option value="adwords">Divorce</option> 
-									<option value="other">Widow/Widower</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="form-group">
-								<label >Communce:</label>
-								<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc >
-									<option></option> 
-									<option value="monster">Choose here</option> 
-									<option value="linkedin">Single</option> 
-									<option value="google">Married</option> 
-									<option value="adwords">Divorce</option> 
-									<option value="other">Widow/Widower</option>
-								</select>
-							</div>
-						</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label>Precent Address:</label>
+					<input type="text" name="pod" class="form-control" placeholder="Type your Present Address">
+				</div>
+			</div>
+		</div>			
+		</div>
+		{{-- Option Address --}}		
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="form-group">
+						<label >Province:</label>
+						<select name="source" data-placeholder="Choose Province..." class="form-control form-control-select2" data-fouc >
+							<option></option> 
+							<option value="monster">Choose here</option> 
+							<option value="linkedin">Single</option> 
+							<option value="google">Married</option> 
+							<option value="adwords">Divorce</option> 
+							<option value="other">Widow/Widower</option>
+						</select>
 					</div>
 				</div>
-				<div class="col-md-12">
-					<div class="row">
-						<div class="col-md-4">
-							<div class="form-group">
-								<label >ឈ្មោះអាណាព្យាបាល:</label>
-								<input type="text" name="pod" class="form-control" placeholder="Type your Present Address">
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="form-group">
-								<label >ទូរស័ព្ទ:</label>
-								<input type="text" name="pod" class="form-control" placeholder="Type your Present Address">
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="form-group">
-								<label >អ៊ីម៉ែល:</label>
-								<input type="text" name="pod" class="form-control" placeholder="Type your Present Address">
-							</div>
-						</div>
+				<div class="col-md-4">
+					<div class="form-group">
+						<label >District:</label>
+						<select name="source" data-placeholder="Choose district..." class="form-control form-control-select2" data-fouc >
+							<option></option> 
+							<option value="monster">Choose here</option> 
+							<option value="linkedin">Single</option> 
+							<option value="google">Married</option> 
+							<option value="adwords">Divorce</option> 
+							<option value="other">Widow/Widower</option>
+						</select>
 					</div>
 				</div>
-				<div class="col-md-12">
-					<div class="row">
-						<div class="col-md-4">
-							<div class="form-group">
-								<label >ទីលំនៅអាណាព្យាបាល:</label>
-								<input type="text" name="pod" class="form-control" placeholder="Type your Present Address">
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="form-group">
-								<label >ផ្សេងពីទីលំនៅអចិន្ត្រៃ:</label>
-								<input type="text" name="pod" class="form-control" placeholder="Type your Present Address">
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="form-group">
-								<label >Photo:</label>
-								<input type="text" name="pod" class="form-control" placeholder="Type your Present Address">
-							</div>
-						</div>
+				<div class="col-md-4">
+					<div class="form-group">
+						<label >Communce:</label>
+						<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc >
+							<option></option> 
+							<option value="monster">Choose here</option> 
+							<option value="linkedin">Single</option> 
+							<option value="google">Married</option> 
+							<option value="adwords">Divorce</option> 
+							<option value="other">Widow/Widower</option>
+						</select>
 					</div>
 				</div>
-			
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="form-group">
+						<label >ឈ្មោះអាណាព្យាបាល:</label>
+						<input type="text" name="pod" class="form-control" placeholder="Type your Present Address">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+						<label >ទូរស័ព្ទ:</label>
+						<input type="text" name="pod" class="form-control" placeholder="Type your Present Address">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+						<label >អ៊ីម៉ែល:</label>
+						<input type="text" name="pod" class="form-control" placeholder="Type your Present Address">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="form-group">
+						<label >ទីលំនៅអាណាព្យាបាល:</label>
+						<input type="text" name="pod" class="form-control" placeholder="Type your Present Address">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+						<label >ផ្សេងពីទីលំនៅអចិន្ត្រៃ:</label>
+						<input type="text" name="pod" class="form-control" placeholder="Type your Present Address">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+						<label >Photo:</label>
+						<input type="text" name="pod" class="form-control" placeholder="Type your Present Address">
+					</div>
+				</div>
+			</div>
+		</div>			
 		</fieldset>
-
 		{{-- End Personal Data --}}
 		<h6>កម្រិតវប្បធម៌ទូទៅ និងការអបរំ និងបណ្តុះបណ្តាល</h6>	
 		<fieldset>
@@ -443,7 +433,6 @@
 				</div>
 			</div>				
 		</fieldset>
-
 
 		<h6>ព័ត៌មានការងារ</h6>
 		<fieldset>
@@ -926,7 +915,6 @@
 				
 			</div>
 		</fieldset>
-
 	</form>
 
   </div>
