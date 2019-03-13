@@ -7,7 +7,7 @@
 	<title>@yield('pagetitle', 'Master Page Layout')</title>
 
 	<!-- Global stylesheets -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	{{--  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">  --}}
 	<link href='http://fonts.googleapis.com/css?family=Battambang' rel='stylesheet' type='text/css'>
 	<link href="{{asset('assets/backend/global_assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
