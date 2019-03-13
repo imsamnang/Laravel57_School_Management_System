@@ -14,6 +14,7 @@
 	<link href="{{asset('assets/backend/global_assets/css/layout.min.css')}}" rel="stylesheet" type="text/css">
 	<link href="{{asset('assets/backend/global_assets/css/components.min.css')}}" rel="stylesheet" type="text/css">
 	<link href="{{asset('assets/backend/global_assets/css/colors.min.css')}}" rel="stylesheet" type="text/css">
+	<link href="{{asset('assets/backend/global_assets/css/custom.css')}}" rel="stylesheet" type="text/css">
 	<!-- /global stylesheets -->
 	@stack('css')
 </head>
@@ -81,6 +82,12 @@
 	<script src="{{asset('assets/backend/global_assets/js/demo_pages/form_wizard.js')}}"></script>
 	<!-- /theme JS files -->
 
+
+<!-- Theme JS files -->
+<script src="{{asset('assets/backend/global_assets/js/plugins/forms/styling/uniform.min.js')}}"></script>
+	<script src="{{asset('assets/backend/global_assets/js/plugins/forms/styling/switchery.min.js')}}"></script>
+	<script src="{{asset('assets/backend/global_assets/js/plugins/forms/styling/switch.min.js')}}"></script>
+<script src="{{asset('assets/backend/global_assets/js/demo_pages/form_checkboxes_radios.js')}}"></script>
 	@stack('js')
 </body>
 </html>

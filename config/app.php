@@ -174,14 +174,6 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        Collective\Html\HtmlServiceProvider::class,
-        Barryvdh\Cors\ServiceProvider::class,
-        Chumper\Zipper\ZipperServiceProvider::class,
-        ConsoleTVs\Links\LinksServiceProvider::class,
-        Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider::class,
-        Themsaid\Langman\LangmanServiceProvider::class,
-        UxWeb\SweetAlert\SweetAlertServiceProvider::class,
-        Yajra\DataTables\DataTablesServiceProvider::class,
 
     ],
 
@@ -231,13 +223,6 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-	    'Form' => Collective\Html\FormFacade::class,
-	    'HTML' => Collective\Html\HtmlFacade::class,
-        'Zipper' => Chumper\Zipper\Zipper::class,
-        'Links' => ConsoleTVs\Links\Facades\Links::class,
-        'LaravelLocalization' => Mcamara\LaravelLocalization\Facades\LaravelLocalization::class,
-        'Alert' => UxWeb\SweetAlert\SweetAlert::class,
-        'DataTables' => Yajra\DataTables\Facades\DataTables::class,
 
     ],
 

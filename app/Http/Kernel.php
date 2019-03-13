@@ -19,10 +19,8 @@ class Kernel extends HttpKernel
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         \App\Http\Middleware\TrustProxies::class,
-        \Barryvdh\Cors\HandleCors::class,
         \Illuminate\Session\Middleware\StartSession::class,
-        \App\Http\Middleware\LanguageSwitcher::class,
-        \App\Http\Middleware\Localization::class,
+        \App\Http\Middleware\LanguageSwitcher::class,        
     ];
 
     /**
@@ -64,14 +62,6 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
-        'admin' => \App\Http\Middleware\AdminMiddleware::class,
-        'admin-permissions' => \App\Http\Middleware\AdminPermissionMiddleware::class,
-        'website-permissions' => \App\Http\Middleware\WebsitePermissionMiddleware::class,
-        'authApi' => \App\Http\Middleware\ApiMiddleware::class,  
-        'localize' => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRoutes::class,
-        'localizationRedirect' => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter::class,
-        'localeSessionRedirect' => \Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect::class,
-        'localeViewPath' => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationViewPath::class
     ];
 
     /**

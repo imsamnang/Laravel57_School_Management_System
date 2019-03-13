@@ -8,8 +8,6 @@ $baseDir = dirname($vendorDir);
 return array(
     'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src'),
     'Parsedown' => array($vendorDir . '/erusev/parsedown'),
-    'Mpociot' => array($vendorDir . '/mpociot/reflection-docblock/src'),
     'Mockery' => array($vendorDir . '/mockery/mockery/library'),
-    'Mcamara\\LaravelLocalization' => array($vendorDir . '/mcamara/laravel-localization/src'),
     'Doctrine\\Common\\Lexer\\' => array($vendorDir . '/doctrine/lexer/lib'),
 );

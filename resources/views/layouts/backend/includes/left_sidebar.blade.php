@@ -44,7 +44,7 @@
 
 				<!-- Main -->
 				<li class="nav-item">
-					<a href="index.html" class="nav-link active">
+					<a href="{{ route('home') }}" class="nav-link active">
 						<i class="icon-home4"></i>
 						<span>
 							Dashboard
@@ -53,9 +53,9 @@
 				</li>
 				<!-- Layout -->
 				<li class="nav-item nav-item-submenu">
-					<a href="#" class="nav-link"><i class="icon-tree5"></i> <span>Menu levels</span></a>
+					<a href="#" class="nav-link"><i class="icon-tree5"></i> <span>Languages</span></a>
 					<ul class="nav nav-group-sub" data-submenu-title="Menu levels">
-						<li class="nav-item"><a href="#" class="nav-link"><i class="icon-IE"></i> Second level</a></li>
+						<li class="nav-item"><a href="{{ route('languages') }}" class="nav-link"><i class="icon-IE"></i> Language Translator</a></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-firefox"></i> Second level with child</a>
 							<ul class="nav nav-group-sub">

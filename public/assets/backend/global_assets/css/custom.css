@@ -1,0 +1,15 @@
+fieldset {
+    /*border: 1px solid #14ea91;*/
+    min-width: 0;
+    padding: 10px;
+    margin: 0;
+    border: 1;
+}
+
+legend {
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #14ea91;
+    font-size: .8125rem;
+}
