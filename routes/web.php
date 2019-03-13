@@ -43,3 +43,4 @@ Route::get('admin/generator', ['uses' => 'Admin\ProcessController@getGenerator']
 Route::post('admin/generator', ['uses' => 'Admin\ProcessController@postGenerator']);
 
 Route::resource('admin/posts', 'Admin\\PostsController');
+Route::resource('admin/articles', 'Admin\\ArticlesController');
