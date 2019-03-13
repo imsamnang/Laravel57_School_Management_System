@@ -17,13 +17,14 @@ class LanguageController extends Controller
           \Session::put('locale', Input::get('locale'));
       }
       return redirect()->back();
-
   }
 
   public function change($lang)
   {
       \Session::put('locale', $lang);
-      return redirect()->route('home');
-
+      // return redirect()->route('home');
+      return redirect()->back();
   }
+
+
 }

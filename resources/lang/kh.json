@@ -1,4 +1,13 @@
 {
+    "backend.dashboard": "ទំព័រមុខ",
+    "backend.manage.student": "គ្រប់គ្រងសិស្ស",
+    "backend.manage.student.add_student": "បន្ថែមសិស្សថ្មី",
+    "backend.manage.student.student_list": "បញ្ជីសិស្សទាំងអស់",
+    "backend.manage.teacher": "គ្រប់គ្រងគ្រូ",
+    "backend.manage.teacher.add_teacher": "បន្ថែមគ្រូថ្មី",
+    "backend.manage.teacher.teacher_list": "បញ្ជីឈ្មោះគ្រូទាំងអស់",
+    "backend.settings": "ការកំណត់",
+    "backend.settings.language": "បកប្រែភាសា",
     "student.index.id": "ល.រ",
     "student.index.name": "ឈ្មោះ"
 }

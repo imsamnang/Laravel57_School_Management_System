@@ -16,9 +16,9 @@ Route::delete('translations/destroy/{key}', 'Admin\\LanguageTranslationControlle
 Route::post('translations/create', 'Admin\\LanguageTranslationController@store')->name('translations.create');
 
 Route::get('check-translation', function(){
-	\App::setLocale('fr');
+	\App::setLocale('kh');
 	
-	dd(__('website'));
+	dd(__('backend.dashboard'));
 });
 
 // Language Route for Switching

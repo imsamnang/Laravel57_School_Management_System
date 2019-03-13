@@ -1,4 +1,13 @@
 {
+    "backend.dashboard": "Dashboard",
+    "backend.manage.student": "Manage Students",
+    "backend.manage.student.add_student": "Add New Student",
+    "backend.manage.student.student_list": "Student Lists",
+    "backend.manage.teacher": "Manage Teacher",
+    "backend.manage.teacher.add_teacher": "Add New Teacher",
+    "backend.manage.teacher.teacher_list": "Teacher Lists",
+    "backend.settings": "Settings",
+    "backend.settings.language": "Languages Translator",
     "student.index.id": "ID",
     "student.index.name": "Name"
 }
