@@ -13,3 +13,10 @@ legend {
     border: 1px solid #14ea91;
     font-size: .8125rem;
 }
+
+body, table, input, textarea, select, li, button {
+    font-family: battambang,trebuchet ms,comic sans ms,Helvetica,Arial,Sans-Serif;
+    font-size: 12px;
+    line-height: normal;
+    color: #333;
+}
