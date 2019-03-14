@@ -1,17 +1,38 @@
-fieldset {
-    /*border: 1px solid #14ea91;*/
-    min-width: 0;
-    padding: 10px;
-    margin: 0;
-    border: 1;
+legend {
+    padding: 2px 5px;
+    font-size: 15px;
+    font-weight: 700;
+    color: blue;
+}
+legend {
+    font-weight: 700;
 }
 
 legend {
-    padding-top: .625rem;
-    padding-bottom: .625rem;
-    margin-bottom: 1.25rem;
-    border: 1px solid #14ea91;
-    font-size: .8125rem;
+    display: block;
+    padding-inline-start: 2px;
+    padding-inline-end: 2px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    border:none;
+    width:200px;
+}
+
+.the-legend {
+    border-style: none;
+    border-width: 0;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    width: auto;
+    padding: 0 10px;
+    border: 1px solid #e0e0e0;
+}
+.the-fieldset {
+    border: 1px solid #e0e0e0;
+    padding: 10px;
 }
 
 body, table, input, textarea, select, li, button {
