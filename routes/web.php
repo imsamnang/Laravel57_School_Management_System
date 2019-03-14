@@ -8,8 +8,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::view('/admin/student','admin.students.create')->name('admin.student.create');
-Route::view('/admin/teacher','admin.teachers.create')->name('admin.teacher.create');
+Route::view('/admin/student/create','admin.students.create')->name('admin.student.create');
+Route::view('/admin/teacher/create','admin.teachers.create')->name('admin.teacher.create');
 
 //Create Language Translation route
 Route::get('languages', 'Admin\\LanguageTranslationController@index')->name('languages');
