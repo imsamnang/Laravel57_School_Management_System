@@ -122,13 +122,13 @@
 						<div class="row">
 						<div class="col-md-6">
 							<div class="form-group">
-								<label>Precent Address:</label>
+								<label class="mylabel">Precent Address:</label>
 								<input type="text" name="pod" class="form-control" placeholder="Type your Present Address">
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<label>Precent Address:</label>
+								<label class="mylabel">Precent Address:</label>
 								<input type="text" name="pod" class="form-control" placeholder="Type your Present Address">
 							</div>
 						</div>
@@ -139,7 +139,7 @@
 						<div class="row">
 							<div class="col-md-4">
 								<div class="form-group">
-									<label >Province:</label>
+									<label class="mylabel">Province:</label>
 									<select name="source" data-placeholder="Choose Province..." class="form-control form-control-select2" data-fouc >
 										<option></option> 
 										<option value="monster">Choose here</option> 
@@ -152,7 +152,7 @@
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
-									<label >District:</label>
+									<label class="mylabel">District:</label>
 									<select name="source" data-placeholder="Choose district..." class="form-control form-control-select2" data-fouc >
 										<option></option> 
 										<option value="monster">Choose here</option> 
@@ -165,7 +165,7 @@
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
-									<label >Communce:</label>
+									<label class="mylabel">Communce:</label>
 									<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc >
 										<option></option> 
 										<option value="monster">Choose here</option> 
@@ -182,19 +182,19 @@
 						<div class="row">
 							<div class="col-md-4">
 								<div class="form-group">
-									<label >ឈ្មោះអាណាព្យាបាល:</label>
+									<label class="mylabel">ឈ្មោះអាណាព្យាបាល:</label>
 									<input type="text" name="pod" class="form-control" placeholder="បំពេញឈ្មោះអាណាព្យាបាល">
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
-									<label >ទូរស័ព្ទ:</label>
+									<label class="mylabel">ទូរស័ព្ទ:</label>
 									<input type="text" name="pod" class="form-control" placeholder="បំពេញទូរស័ព្ទ...">
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
-									<label >អ៊ីម៉ែល:</label>
+									<label class="mylabel">អ៊ីម៉ែល:</label>
 									<input type="text" name="pod" class="form-control" placeholder="បំពេញសារអេឡិចត្រូនិក">
 								</div>
 							</div>
@@ -204,7 +204,7 @@
 						<div class="row">
 							<div class="col-md-4">
 								<div class="form-group">
-									<label >ទីលំនៅអាណាព្យាបាល:</label>
+									<label class="mylabel">ទីលំនៅអាណាព្យាបាល:</label>
 {{-- 									<label >												
 										<input type="radio" name="rd_parent_address" value="1" checked="checked">
 										ដូចនឹងទីលំនៅអចិន្ត្រៃយ៍ 
@@ -221,14 +221,14 @@
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
-										<label >ភូមិ/ឃុំ/ស្រុក/ខេត្ត​</label>
+										<label class="mylabel">ភូមិ/ឃុំ/ស្រុក/ខេត្ត​:</label>
 										<input type="text" name="txt_parent_other" value="" class="form-control" placeholder="ទីលំនៅអាណាព្យាបាល​ផ្សេងពីទីលំនៅអចិន្ត្រៃ" id="parent_other">
 									
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
-									<label >រូបថត:</label>
+									<label class="mylabel">រូបថត:</label>
                     <input name="recommendations" type="file" class="form-input-styled" data-fouc>
                     <span class="form-text text-muted">Accepted formats: .png, .jpg, .bmp Max file size 2Mb</span>
                 </div>
@@ -250,7 +250,7 @@
 									<div class="row">						
 											<div class="col-md-4">
 												<div class="form-group">
-													<label>General Education:</label>
+													<label class="mylabel">General Education:</label>
 													<select name="cbo_general_education" class="form-control">
 															<option value="0">Choose one</option>
 															<option value="22">Illiterate</option>
@@ -270,7 +270,7 @@
 												</div>
 											</div>
 											<div class="col-md-6">
-												<label for=""><strong>Student Currently Enrolled in General Education?</strong></label>
+												<label class="mylabel"for=""><strong>Student Currently Enrolled in General Education?</strong></label>
 												<div >
 														<input type="radio" name="rd_enrol_ge" value="1" checked="checked">
 														YES <br>
@@ -291,13 +291,13 @@
 					<div class="row">
 							<div class="col-md-2">
 									<div class="form-group">
-										<label>Course/Program Name</label>
+										<label class="mylabel">Course/Program Name</label>
 										<input type="text" name="pod" class="form-control" placeholder="Course name..">
 									</div>
 							</div>
 							<div class="col-md-2">
 									<div class="form-group">
-										<label >TVET?</label>
+										<label class="mylabel">TVET?</label>
 										<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc >
 											<option value="yes">Yes</option> 
 											<option value="no">No</option> 
@@ -306,7 +306,7 @@
 							</div>
 							<div class="col-md-2">
 									<div class="form-group">
-										<label >Course Type</label>
+										<label class="mylabel">Course Type</label>
 										<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc >
 											<option value="yes">C1</option> 
 											<option value="no">C2</option> 
@@ -315,21 +315,21 @@
 							</div>
 							<div class="col-md-1">
 									<div class="form-group">
-										<label>Year</label>
+										<label class="mylabel">Year</label>
 										<input type="text" name="pod" class="form-control" placeholder="2019" maxlength="4">
 									</div>
 							</div>
 							{{--  School Name	  --}}
 							<div class="col-md-2">
 									<div class="form-group">
-										<label>School Name</label>
+										<label class="mylabel">School Name</label>
 										<input type="text" name="pod" class="form-control" placeholder="School Name here.." ">
 									</div>
 							</div>
 							{{--  Location	  --}}
 							<div class="col-md-2">
 									<div class="form-group">
-										<label>Location</label>
+										<label class="mylabel">Location</label>
 										<input type="text" name="pod" class="form-control" placeholder="Complete Location" >
 									</div>
 							</div>
@@ -337,7 +337,7 @@
 							
 							<div class="col-md-1">
 									<div class="form-group">
-										<label>Add/Del</label>	
+										<label class="mylabel">Add/Del</label>	
 										<span class="badge bg-info"><img src="{{asset('assets/backend/global_assets/images/add.png')}}" class="student_course_add_row" height="14" width="14"></span>
 										<span class="badge bg-info"><img src="{{asset('assets/backend/global_assets/images/remove.png')}}" class="student_course_remove_row" height="14" width="14"></span>
 									</div>
@@ -354,7 +354,7 @@
 						<div class="row">
 								<div class="col-md-3">
 										<div class="form-group">
-											<label >Employment Status:</label>
+											<label class="mylabel">Employment Status:</label>
 											<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc >
 												<option></option> 
 												<option value="choose">Choose here</option> 
@@ -365,7 +365,7 @@
 								</div>
 								<div class="col-md-3">
 										<div class="form-group">
-											<label >What is your job?</label>
+											<label class="mylabel">What is your job?</label>
 											<input type="text" name="experience-company" placeholder=" " class="form-control">
 
 											

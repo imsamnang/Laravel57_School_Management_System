@@ -12,7 +12,7 @@ body, table, input, textarea, select, li, button {
     line-height: 20px;
     margin-bottom: 0;
     width: auto;
-    padding: 0 10px;
+    padding: 5px 10px 5px 10px !important;
     border: 1px solid #e0e0e0;
 }
 .the-fieldset {
@@ -44,4 +44,7 @@ background:#2d2d2d;}
 ul, ol {
     margin-top: 0;
     margin-bottom: 8.5px;
+}
+.mylabel{
+    margin-top:5px;
 }
