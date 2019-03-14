@@ -1,22 +1,28 @@
-fieldset {
-    /*border: 1px solid #14ea91;*/
-    min-width: 0;
-    padding: 10px;
-    margin: 0;
-    border: 1;
-}
-
-legend {
-    padding-top: .625rem;
-    padding-bottom: .625rem;
-    margin-bottom: 1.25rem;
-    border: 1px solid #14ea91;
-    font-size: .8125rem;
-}
-
 body, table, input, textarea, select, li, button {
     font-family: battambang,trebuchet ms,comic sans ms,Helvetica,Arial,Sans-Serif;
     font-size: 12px;
     line-height: normal;
     color: #333;
 }
+
+.the-legend {
+    border-style: none;
+    border-width: 0;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    width: auto;
+    padding: 0 10px;
+    border: 1px solid #e0e0e0;
+}
+.the-fieldset {
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+}
+
+img{
+  max-width:180px;
+}
+input[type=file]{
+padding:10px;
+background:#2d2d2d;}
