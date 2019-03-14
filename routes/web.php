@@ -39,9 +39,21 @@ Route::get('/lang/{lang}', array(
 
 
 //Crud Generator UI
-Route::resource('admin/activitylogs', 'Admin\ActivityLogsController');
+Route::resource('admin/activitylogs', 'Admin\\ActivityLogsController');
 
-Route::get('admin/generator', ['uses' => 'Admin\ProcessController@getGenerator']);
+Route::get('admin/generator', ['uses' => 'Admin\\ProcessController@getGenerator']);
 
-Route::post('admin/generator', ['uses' => 'Admin\ProcessController@postGenerator']);
+Route::post('admin/generator', ['uses' => 'Admin\\ProcessController@postGenerator']);
 
+
+
+// Ajax to switch languages routes
+
+Route::post('language-chooser','Admin\\AjaxLanguageController@changeLanguage');
+
+Route::post('/language', array(
+	'before' => 'csrf',
+	'as' => 'language-chooser',
+	'uses' => 'Admin\\AjaxLanguageController@changeLanguage', 
+	)
+);

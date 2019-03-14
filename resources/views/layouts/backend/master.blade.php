@@ -86,7 +86,8 @@
 <!-- Theme JS files -->
 	<script src="{{asset('assets/backend/global_assets/js/plugins/forms/styling/uniform.min.js')}}"></script>
 	<script src="{{asset('assets/backend/global_assets/js/plugins/forms/styling/switch.min.js')}}"></script>
-<script src="{{asset('assets/backend/global_assets/js/demo_pages/form_checkboxes_radios.js')}}"></script>
+	<script src="{{asset('assets/backend/global_assets/js/demo_pages/form_checkboxes_radios.js')}}"></script>
+	<script src="{{asset('assets/backend/global_assets/js/custom.js')}}"></script>	
 	@stack('js')
 </body>
 </html>

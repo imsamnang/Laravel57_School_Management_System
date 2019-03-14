@@ -4,7 +4,6 @@
 			<img src="{{asset('assets/backend/global_assets/images/logo_light.png')}}" alt="">
 		</a>
 	</div>
-
 	<div class="d-md-none">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
 			<i class="icon-tree5"></i>
@@ -13,7 +12,6 @@
 			<i class="icon-paragraph-justify3"></i>
 		</button>
 	</div>
-
 	<div class="collapse navbar-collapse" id="navbar-mobile">
 		<ul class="navbar-nav">
 			<li class="nav-item">
@@ -106,6 +104,51 @@
 		<span class="navbar-text ml-md-3 mr-md-auto">
 			<span class="badge bg-success">Online</span>
 		</span>
+{{-- 			<form action="language" method="POST">
+				{{csrf_field()}}
+				<select class="nav-item dropdown" id="languageSwitcher">
+				    <option value="en">English</option>
+				  	<option value="kh" {{Lang::locale()=='kh'?'selected':''}}>Khmer</option>
+				  	<option value="th" {{Lang::locale()=='th'?'selected':''}}>Thai</option>
+				  	<option value="fr" {{Lang::locale()=='fr'?'selected':''}}>French</option>
+				  	<option value="de" {{Lang::locale()=='de'?'selected':''}}>German</option>
+				</select>
+			</form>
+ --}}
+{{-- <ul class="list-inline links-list pull-right">
+	<li class="dropdown language-selector">
+		Language: &nbsp;
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true" aria-expanded="false">
+			<img src="{{('assets/backend/global_assets/images/lang/flag-uk.png')}}" width="16" height="16"></a> 
+		<ul class="dropdown-menu pull-right"> 
+			<li>
+				<a href="#">
+					<img src="{{('assets/backend/global_assets/images/lang/flag-de.png')}}" width="16" height="16"> 
+					<span>Deutsch</span> 
+				</a> 
+			</li> 
+			<li class="active">
+				<a href="#">
+					<img src="{{('assets/backend/global_assets/images/lang/flag-uk.png')}}" width="16" height="16"> <span>English</span>
+				</a> 
+			</li> 
+			<li>
+				<a href="#">
+					<img src="{{('assets/backend/global_assets/images/lang/flag-fr.png')}}" width="16" height="16"> <span>François</span>
+				</a> 
+			</li>
+			<li>
+				<a href="#">
+					<img src="{{('assets/backend/global_assets/images/lang/flag-al.png')}}" width="16" height="16"> <span>Shqip</span>
+				</a> 
+		</li> 
+		<li>
+			<a href="#">
+				<img src="{{('assets/backend/global_assets/images/lang/flag-es.png')}}" width="16" height="16"> <span>Español</span>
+			</a> 
+		</li> 
+	</ul>
+</ul> --}}
 		<ul class="navbar-nav">
 			<li class="nav-item dropdown">
 				<a href="#" class="navbar-nav-link dropdown-toggle caret-0" data-toggle="dropdown">
@@ -257,7 +300,7 @@
 											<span class="text-muted float-right font-size-sm">Mon</span>
 										</a>
 									</div>
-									
+
 									<span class="text-muted">Other travelling salesmen live a life of luxury...</span>
 								</div>
 							</li>
@@ -300,3 +343,4 @@
 		</ul>
 	</div>
 </div>
+
