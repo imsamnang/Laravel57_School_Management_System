@@ -24,74 +24,148 @@
 	<form class="wizard-form steps-basic form-horizontal" action="#" data-fouc>
 		<h6>ជីវប្រវត្តិសិស្ស</h6>	
 		<fieldset>
-				<div class="form-group">
-						<fieldset class="the-fieldset">
-						  <legend class="the-legend">(A) Biographic Data</legend>
-							
-		<div class="form-group row">
-				<label class="col-form-label col-lg-2">នាមត្រកូល​:</label>
-				<div class="col-lg-4">
-					<input type="text" class="form-control">
-				</div>
-				<label class="col-form-label col-lg-2">នាមខ្លួន:</label>
-				<div class="col-lg-4">
-					<input type="text" class="form-control">
-				</div>
-				{{-- English Name --}}
-				<label class="col-form-label col-lg-2">Family Name:</label>
-				<div class="col-lg-4">
-					<input type="text" class="form-control">
-				</div>
-				<label class="col-form-label col-lg-2">Firs Name:</label>
-				<div class="col-lg-4">
-					<input type="text" class="form-control">
-				</div>
-			</div>
-			{{-- Row2 --}}
-			<div class="form-group row">
-					<label class="col-form-label col-lg-2">Gender:</label>
-					<div class="col-lg-4">
-						<select name="gender" data-placeholder="Choose gender" class="form-control form-control-select2 " data-fouc >
-							<option></option> 
-							<option value="male">Male</option> 
-							<option value="femal">Female</option>					
-						</select>
-					</div>			
-					<label class="col-form-label col-lg-2">Date Of Birth:</label>
-					<div class="col-lg-4">
-						<input type="text" name="dob" class="form-control">
+			<div class="form-group">
+				<fieldset class="the-fieldset">
+					<legend class="the-legend">(A) Biographic Data</legend>							
+					<div class="form-group row">
+						<label class="col-form-label col-lg-2">នាមត្រកូល​:</label>
+						<div class="col-lg-4">
+							<input type="text" class="form-control">
+						</div>
+						<label class="col-form-label col-lg-2">នាមខ្លួន:</label>
+						<div class="col-lg-4">
+							<input type="text" class="form-control">
+						</div>
+						{{-- English Name --}}
+						<label class="col-form-label col-lg-2">Family Name:</label>
+						<div class="col-lg-4">
+							<input type="text" class="form-control">
+						</div>
+						<label class="col-form-label col-lg-2">Firs Name:</label>
+						<div class="col-lg-4">
+							<input type="text" class="form-control">
+						</div>
 					</div>
-			</div>
-			{{-- Row3 --}}
-			<div class="form-group row">
-					<label class="col-form-label col-lg-2">លេខអត្តសញ្ញាប័ណ្ណ:</label>
-					<div class="col-lg-4">
-						<input type="text" name="identified_card_id" class="form-control">
-					</div>			
-					<label class="col-form-label col-lg-2">អត្ថលេខសិស្ស/StuID:</label>
-					<div class="col-lg-4">
-						<input type="text" name="student_id" class="form-control">
+					{{-- Row2 --}}
+					<div class="form-group row">
+							<label class="col-form-label col-lg-2">Gender:</label>
+							<div class="col-lg-4">
+								<select name="gender" data-placeholder="Choose gender" class="form-control form-control-select2 " data-fouc >
+									<option></option> 
+									<option value="male">Male</option> 
+									<option value="femal">Female</option>					
+								</select>
+							</div>			
+							<label class="col-form-label col-lg-2">Date Of Birth:</label>
+							<div class="col-lg-4">
+								<input type="text" name="dob" class="form-control">
+							</div>
 					</div>
-			</div>
-			{{-- Row4 --}}
-			<div class="row">		
-					<div class="col-md-6">
+					{{-- Row3 --}}
+					<div class="form-group row">
+							<label class="col-form-label col-lg-2">លេខអត្តសញ្ញាប័ណ្ណ:</label>
+							<div class="col-lg-4">
+								<input type="text" name="identified_card_id" class="form-control">
+							</div>			
+							<label class="col-form-label col-lg-2">អត្ថលេខសិស្ស/StuID:</label>
+							<div class="col-lg-4">
+								<input type="text" name="student_id" class="form-control">
+							</div>
+					</div>
+					{{-- Row4 --}}
+					<div class="row">		
+							<div class="col-md-6">
+								<div class="row">
+									<div class="col-md-4">
+										<div class="form-group">
+											<label >Number of family:</label>
+											<input type="text" name="student_id" class="form-control" placeholder="Number"??? > 
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>Travel Distance:</label>
+											<input type="text" name="student_id" class="form-control" placeholder="Km">
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-group">
+											<label >Family Situation:</label>
+											<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc >
+												<option></option> 
+												<option value="monster">Choose here</option> 
+												<option value="linkedin">Single</option> 
+												<option value="google">Married</option> 
+												<option value="adwords">Divorce</option> 
+												<option value="other">Widow/Widower</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label >Transportation:</label>
+									<select name="source" data-placeholder="Choose Transportation..." class="form-control form-control-select2" data-fouc >
+										<option></option> 
+										<option value="monster">Choose here</option> 
+										<option value="linkedin">Tuk Tuk</option> 
+										<option value="google">Own Car</option> 
+										<option value="adwords">Motobike</option> 
+										<option value="other">Bycicle</option>
+									</select>
+								</div>
+							</div>		
+					</div>
+					<div class="col-md-12">
+						<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Precent Address:</label>
+								<input type="text" name="pod" class="form-control" placeholder="Type your Present Address">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Precent Address:</label>
+								<input type="text" name="pod" class="form-control" placeholder="Type your Present Address">
+							</div>
+						</div>
+					</div>			
+					</div>
+					{{-- Option Address --}}		
+					<div class="col-md-12">
 						<div class="row">
 							<div class="col-md-4">
 								<div class="form-group">
-									<label >Number of family:</label>
-									<input type="text" name="student_id" class="form-control" placeholder="Number"??? > 
+									<label >Province:</label>
+									<select name="source" data-placeholder="Choose Province..." class="form-control form-control-select2" data-fouc >
+										<option></option> 
+										<option value="monster">Choose here</option> 
+										<option value="linkedin">Single</option> 
+										<option value="google">Married</option> 
+										<option value="adwords">Divorce</option> 
+										<option value="other">Widow/Widower</option>
+									</select>
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
-									<label>Travel Distance:</label>
-									<input type="text" name="student_id" class="form-control" placeholder="Km">
+									<label >District:</label>
+									<select name="source" data-placeholder="Choose district..." class="form-control form-control-select2" data-fouc >
+										<option></option> 
+										<option value="monster">Choose here</option> 
+										<option value="linkedin">Single</option> 
+										<option value="google">Married</option> 
+										<option value="adwords">Divorce</option> 
+										<option value="other">Widow/Widower</option>
+									</select>
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
-									<label >Family Situation:</label>
+									<label >Communce:</label>
 									<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc >
 										<option></option> 
 										<option value="monster">Choose here</option> 
@@ -104,141 +178,66 @@
 							</div>
 						</div>
 					</div>
-					<div class="row">
 					<div class="col-md-12">
-						<div class="form-group">
-							<label >Transportation:</label>
-							<select name="source" data-placeholder="Choose Transportation..." class="form-control form-control-select2" data-fouc >
-								<option></option> 
-								<option value="monster">Choose here</option> 
-								<option value="linkedin">Tuk Tuk</option> 
-								<option value="google">Own Car</option> 
-								<option value="adwords">Motobike</option> 
-								<option value="other">Bycicle</option>
-							</select>
-						</div>
-					</div>		
-			</div>
-			<div class="col-md-12">
-				<div class="row">
-				<div class="col-md-6">
-					<div class="form-group">
-						<label>Precent Address:</label>
-						<input type="text" name="pod" class="form-control" placeholder="Type your Present Address">
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="form-group">
-						<label>Precent Address:</label>
-						<input type="text" name="pod" class="form-control" placeholder="Type your Present Address">
-					</div>
-				</div>
-			</div>			
-			</div>
-			{{-- Option Address --}}		
-			<div class="col-md-12">
-				<div class="row">
-					<div class="col-md-4">
-						<div class="form-group">
-							<label >Province:</label>
-							<select name="source" data-placeholder="Choose Province..." class="form-control form-control-select2" data-fouc >
-								<option></option> 
-								<option value="monster">Choose here</option> 
-								<option value="linkedin">Single</option> 
-								<option value="google">Married</option> 
-								<option value="adwords">Divorce</option> 
-								<option value="other">Widow/Widower</option>
-							</select>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="form-group">
+									<label >ឈ្មោះអាណាព្យាបាល:</label>
+									<input type="text" name="pod" class="form-control" placeholder="បំពេញឈ្មោះអាណាព្យាបាល">
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label >ទូរស័ព្ទ:</label>
+									<input type="text" name="pod" class="form-control" placeholder="បំពេញទូរស័ព្ទ...">
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label >អ៊ីម៉ែល:</label>
+									<input type="text" name="pod" class="form-control" placeholder="បំពេញសារអេឡិចត្រូនិក">
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="form-group">
-							<label >District:</label>
-							<select name="source" data-placeholder="Choose district..." class="form-control form-control-select2" data-fouc >
-								<option></option> 
-								<option value="monster">Choose here</option> 
-								<option value="linkedin">Single</option> 
-								<option value="google">Married</option> 
-								<option value="adwords">Divorce</option> 
-								<option value="other">Widow/Widower</option>
-							</select>
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="form-group">
+									<label >ទីលំនៅអាណាព្យាបាល:</label>
+{{-- 									<label >												
+										<input type="radio" name="rd_parent_address" value="1" checked="checked">
+										ដូចនឹងទីលំនៅអចិន្ត្រៃយ៍ 
+										<input type="radio" name="rd_parent_address" value="0">
+										ផ្សេងពីទីលំនៅអចិន្ត្រៃយ៍
+									</label>			 --}}	
+									<div class="form-check form-check-switch form-check-switch-left">
+										<label class="form-check-label d-flex align-items-center">
+											ដូចនឹងទីលំនៅអចិន្ត្រៃយ៍ &nbsp; 
+											<input type="checkbox" data-off-color="danger" data-on-text="Yes" data-off-text="No" class="form-check-input-switch" checked id="btnswitch">
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+										<label >ភូមិ/ឃុំ/ស្រុក/ខេត្ត​</label>
+										<input type="text" name="txt_parent_other" value="" class="form-control" placeholder="ទីលំនៅអាណាព្យាបាល​ផ្សេងពីទីលំនៅអចិន្ត្រៃ" id="parent_other">
+									
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label >រូបថត:</label>
+                    <input name="recommendations" type="file" class="form-input-styled" data-fouc>
+                    <span class="form-text text-muted">Accepted formats: .png, .jpg, .bmp Max file size 2Mb</span>
+                </div>
+							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="form-group">
-							<label >Communce:</label>
-							<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc >
-								<option></option> 
-								<option value="monster">Choose here</option> 
-								<option value="linkedin">Single</option> 
-								<option value="google">Married</option> 
-								<option value="adwords">Divorce</option> 
-								<option value="other">Widow/Widower</option>
-							</select>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-12">
-				<div class="row">
-					<div class="col-md-4">
-						<div class="form-group">
-							<label >ឈ្មោះអាណាព្យាបាល:</label>
-							<input type="text" name="pod" class="form-control" placeholder="បំពេញឈ្មោះអាណាព្យាបាល">
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="form-group">
-							<label >ទូរស័ព្ទ:</label>
-							<input type="text" name="pod" class="form-control" placeholder="បំពេញទូរស័ព្ទ...">
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="form-group">
-							<label >អ៊ីម៉ែល:</label>
-							<input type="text" name="pod" class="form-control" placeholder="បំពេញសារអេឡិចត្រូនិក">
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-12">
-				<div class="row">
-					<div class="col-md-4">
-						<div class="form-group">
-							<label >ទីលំនៅអាណាព្យាបាល:</label>
-							<label >												
-									<input type="radio" name="rd_parent_address" value="1" checked="checked">
-									ដូចនឹងទីលំនៅអចិន្ត្រៃយ៍ 
-									<input type="radio" name="rd_parent_address" value="0">
-									ផ្សេងពីទីលំនៅអចិន្ត្រៃយ៍
-								</label>
-							
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="form-group">
-								<label >ភូមិ/ឃុំ/ស្រុក/ខេត្ត​</label>
-								<input type="text" name="txt_parent_other" value="" class="form-control" placeholder="ទីលំនៅអាណាព្យាបាល​ផ្សេងពីទីលំនៅអចិន្ត្រៃ">
-							
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="form-group">
-							<label >រូបថត:</label>
-							
-							<input type="file" size="80" name="userfile">
-							<input name="file_photo" type="hidden" value="0">
-							
-						</div>
-					</div>
-				</div>
-			</div>			
-						   
-						</fieldset>
-					  </div>
-	
-	
-	</fieldset>
+				</fieldset>
+			</div>	
+		</fieldset>
 		{{-- End Personal Data --}}
 
 		<h6>កម្រិតវប្បធម៌ទូទៅ និងការអបរំ និងបណ្តុះបណ្តាល</h6>	
@@ -267,8 +266,7 @@
 															<option value="10"> 10</option>
 															<option value="11"> 11</option>
 															<option value="12"> 12</option>
-														</select>
-													
+														</select>													
 												</div>
 											</div>
 											<div class="col-md-6">
@@ -287,72 +285,67 @@
 					</div>			
 				</div>	
 			</div>
-
-<div class="form-group">
-		<fieldset class="the-fieldset">
-			<legend class="the-legend">(C) Further Education & Training</legend>
-			<div class="row">
-					<div class="col-md-2">
-							<div class="form-group">
-								<label>Course/Program Name</label>
-								<input type="text" name="pod" class="form-control" placeholder="Course name..">
+			<div class="form-group">
+				<fieldset class="the-fieldset">
+					<legend class="the-legend">(C) Further Education & Training</legend>
+					<div class="row">
+							<div class="col-md-2">
+									<div class="form-group">
+										<label>Course/Program Name</label>
+										<input type="text" name="pod" class="form-control" placeholder="Course name..">
+									</div>
+							</div>
+							<div class="col-md-2">
+									<div class="form-group">
+										<label >TVET?</label>
+										<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc >
+											<option value="yes">Yes</option> 
+											<option value="no">No</option> 
+										</select>
+									</div>
+							</div>
+							<div class="col-md-2">
+									<div class="form-group">
+										<label >Course Type</label>
+										<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc >
+											<option value="yes">C1</option> 
+											<option value="no">C2</option> 
+										</select>
+									</div>
+							</div>
+							<div class="col-md-1">
+									<div class="form-group">
+										<label>Year</label>
+										<input type="text" name="pod" class="form-control" placeholder="2019" maxlength="4">
+									</div>
+							</div>
+							{{--  School Name	  --}}
+							<div class="col-md-2">
+									<div class="form-group">
+										<label>School Name</label>
+										<input type="text" name="pod" class="form-control" placeholder="School Name here.." ">
+									</div>
+							</div>
+							{{--  Location	  --}}
+							<div class="col-md-2">
+									<div class="form-group">
+										<label>Location</label>
+										<input type="text" name="pod" class="form-control" placeholder="Complete Location" >
+									</div>
+							</div>
+							{{--  add/del  --}}
+							
+							<div class="col-md-1">
+									<div class="form-group">
+										<label>Add/Del</label>	
+										<span class="badge bg-info"><img src="{{asset('assets/backend/global_assets/images/add.png')}}" class="student_course_add_row" height="14" width="14"></span>
+										<span class="badge bg-info"><img src="{{asset('assets/backend/global_assets/images/remove.png')}}" class="student_course_remove_row" height="14" width="14"></span>
+									</div>
 							</div>
 					</div>
-					<div class="col-md-2">
-							<div class="form-group">
-								<label >TVET?</label>
-								<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc >
-									<option value="yes">Yes</option> 
-									<option value="no">No</option> 
-								</select>
-							</div>
-					</div>
-					<div class="col-md-2">
-							<div class="form-group">
-								<label >Course Type</label>
-								<select name="source" data-placeholder="Choose an option..." class="form-control form-control-select2" data-fouc >
-									<option value="yes">C1</option> 
-									<option value="no">C2</option> 
-								</select>
-							</div>
-					</div>
-					<div class="col-md-1">
-							<div class="form-group">
-								<label>Year</label>
-								<input type="text" name="pod" class="form-control" placeholder="2019" maxlength="4">
-							</div>
-					</div>
-					{{--  School Name	  --}}
-					<div class="col-md-2">
-							<div class="form-group">
-								<label>School Name</label>
-								<input type="text" name="pod" class="form-control" placeholder="School Name here.." ">
-							</div>
-					</div>
-					{{--  Location	  --}}
-					<div class="col-md-2">
-							<div class="form-group">
-								<label>Location</label>
-								<input type="text" name="pod" class="form-control" placeholder="Complete Location" >
-							</div>
-					</div>
-					{{--  add/del  --}}
-					
-					<div class="col-md-1">
-							<div class="form-group">
-								<label>Add/Del</label>	
-								<span class="badge bg-info"><img src="http://www.tvetmis.com/internal/1819/image/add.png" class="student_course_add_row" height="14" width="14"></span>
-								<span class="badge bg-info"><img src="http://www.tvetmis.com/internal/1819/image/remove.png" class="student_course_remove_row" height="14" width="14"></span>					
-								
-																
-							</div>
-					</div>
-			</div>
+				</fieldset>
+			</div>				
 		</fieldset>
-	</div>
-
-				
-	</fieldset>
 		<h6>ព័ត៌មានការងារ</h6>
 		<fieldset>
 				<div class="form-group">

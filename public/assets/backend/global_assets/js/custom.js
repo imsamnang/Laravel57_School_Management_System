@@ -28,4 +28,15 @@ $(document).ready(function(){
 			}
 		});
 	});
+
+// Initialize
+	$('.form-check-input-switch').bootstrapSwitch();
+  $(".form-check-input-switch").click(function(){
+      if($(".form-check-input-switch").prop("checked") == true){
+          $("#parent_other").prop("disabled", false);
+      }
+      else if($('.form-check-input-switch').prop("checked") == false){
+          $("#parent_other").prop("disabled", true)
+      }
+  });
 });
