@@ -53,7 +53,7 @@
 				<li class="nav-item nav-item-submenu">
 					<a href="#" class="nav-link"><i class="icon-tree5"></i> <span>{{__('backend.manage.student')}}</span></a>
 					<ul class="nav nav-group-sub" data-submenu-title="Menu levels">
-						<li class="nav-item"><a href="{{ route('admin.student.create') }}" class="nav-link"><i class="icon-IE"></i> {{__('backend.manage.student.add_student')}}</a></li>
+						<li class="nav-item"><a href="#" class="nav-link"><i class="icon-IE"></i> {{__('backend.manage.student.add_student')}}</a></li>
 						<li class="nav-item"><a href="#" class="nav-link"><i class="icon-chrome"></i> {{__('backend.manage.student.student_list')}}</a></li>
 					</ul>
 				</li>
@@ -69,7 +69,7 @@
 				<li class="nav-item nav-item-submenu">
 					<a href="#" class="nav-link"><i class="icon-tree5"></i> <span>{{__('backend.manage.teacher')}}</span></a>
 					<ul class="nav nav-group-sub" data-submenu-title="Menu levels">
-						<li class="nav-item"><a href="{{ route('admin.teacher.create') }}" class="nav-link"><i class="icon-IE"></i> {{__('backend.manage.teacher.add_teacher')}}</a></li>
+						<li class="nav-item"><a href="#" class="nav-link"><i class="icon-IE"></i> {{__('backend.manage.teacher.add_teacher')}}</a></li>
 						<li class="nav-item"><a href="#" class="nav-link"><i class="icon-chrome"></i> @lang('backend.manage.teacher.teacher_list')</a></li>
 					</ul>
 				</li>
