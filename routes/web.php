@@ -8,8 +8,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::view('/admin/student/create','admin.students.create')->name('admin.student.create');
-Route::view('/admin/teacher/create','admin.teachers.create')->name('admin.teacher.create');
+// Route::view('/admin/student/create','admin.students.create')->name('admin.student.create');
+// Route::view('/admin/teacher/create','admin.teachers.create')->name('admin.teacher.create');
 
 //Create Language Translation route
 Route::get('languages', 'Admin\\LanguageTranslationController@index')->name('languages');
@@ -44,7 +44,6 @@ Route::resource('admin/activitylogs', 'Admin\\ActivityLogsController');
 Route::get('admin/generator', ['uses' => 'Admin\\ProcessController@getGenerator']);
 
 Route::post('admin/generator', ['uses' => 'Admin\\ProcessController@postGenerator']);
-
 
 
 // Ajax to switch languages routes

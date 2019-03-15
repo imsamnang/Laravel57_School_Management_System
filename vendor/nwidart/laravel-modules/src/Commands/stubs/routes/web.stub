@@ -1,0 +1,9 @@
+<?php
+
+// Route::prefix('$LOWER_NAME$')->group(function() {
+//     Route::get('/', '$STUDLY_NAME$Controller@index');
+// });
+
+Route::group(['prefix' => 'admin'], function () {
+    Route::resource('/$LOWER_NAME$', '$STUDLY_NAME$Controller', ['as' => 'admin']);
+});
