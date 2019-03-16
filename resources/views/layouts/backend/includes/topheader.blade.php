@@ -328,8 +328,8 @@
 			</li>
 			<li class="nav-item dropdown dropdown-user">
 				<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
-					<img src="{{asset('assets/backend/global_assets/images/lang/en.png')}}" class="img-flag" alt="">
-					<span>Languages</span>
+					<?php $flags = config('app.locale'); ?>
+					<img src="{{asset('assets/backend/global_assets/images/lang/'.$flags.'.png')}}" class="img-flag" alt="{{$flags}}" width="32" height="15">
 				</a>
 				<div class="dropdown-menu dropdown-menu-right">
 					<a href="lang/en" class="dropdown-item"><img src="{{asset('assets/backend/global_assets/images/lang/en.png')}}" class="img-flag" alt=""> English</a>

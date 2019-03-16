@@ -328,8 +328,8 @@
 			</li>
 			<li class="nav-item dropdown dropdown-user">
 				<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
-					<img src="{{asset('assets/backend/global_assets/images/lang/en.png')}}" class="img-flag" alt="">
-					<span>Languages</span>
+					<?php $flags = config('lang.locale'); ?>
+					<img src="{{asset('assets/backend/global_assets/images/lang/'.$flags.'.png')}}" class="img-flag" alt="">
 				</a>
 				<div class="dropdown-menu dropdown-menu-right">
 					<a href="lang/en" class="dropdown-item"><img src="{{asset('assets/backend/global_assets/images/lang/en.png')}}" class="img-flag" alt=""> English</a>
@@ -344,3 +344,28 @@
 	</div>
 </div>
 
+{{--         <li class="dropdown language">
+          <a data-close-others="true" data-hover="dropdown" data-toggle="dropdown" class="dropdown-toggle" href="#">
+            <?php $value = config('lang.locale'); ?>
+              <img src="{{ asset('ev-assets/backend/img/flags/'.$value.'.png') }}" alt="" width='18' height='13' alt="">
+              <!-- <span class="username">English US</span> -->
+              <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+              <li><a href="{{ url('admin/language/ar') }}"><img src="{{ asset('ev-assets/backend/img/flags/ar.png') }}" width='18' height='13' alt=""> Arabic</a></li>
+              <li><a href="{{ url('admin/language/bl') }}"><img src="{{ asset('ev-assets/backend/img/flags/bl.png') }}" width='18' height='13' alt=""> Bengali</a></li>
+              <li><a href="{{ url('admin/language/ch') }}"><img src="{{ asset('ev-assets/backend/img/flags/ch.png') }}" width='18' height='13' alt=""> Chinese</a></li>
+              <li><a href="{{ url('admin/language/en') }}"><img src="{{ asset('ev-assets/backend/img/flags/en.png') }}" alt=""> English US</a></li>
+              <li><a href="{{ url('admin/language/fr') }}"><img src="{{ asset('ev-assets/backend/img/flags/fr.png') }}" alt=""> French</a></li>
+              <li><a href="{{ url('admin/language/de') }}"><img src="{{ asset('ev-assets/backend/img/flags/de.png') }}" alt=""> German</a></li>
+              <li><a href="{{ url('admin/language/hi') }}"><img src="{{ asset('ev-assets/backend/img/flags/hi.png') }}" width='18' height='13' alt=""> Hindi</a></li>
+              <li><a href="{{ url('admin/language/id') }}"><img src="{{ asset('ev-assets/backend/img/flags/id.png') }}" width='18' height='13' alt=""> Indonesian</a></li>
+              <li><a href="{{ url('admin/language/it') }}"><img src="{{ asset('ev-assets/backend/img/flags/it.png') }}" width='18' height='13' alt=""> Italian</a></li>
+              <li><a href="{{ url('admin/language/ro') }}"><img src="{{ asset('ev-assets/backend/img/flags/ro.png') }}" width='18' height='13' alt=""> Romanian</a></li>
+              <li><a href="{{ url('admin/language/ru') }}"><img src="{{ asset('ev-assets/backend/img/flags/ru.png') }}" alt=""> Russian</a></li>
+              <li><a href="{{ url('admin/language/es') }}"><img src="{{ asset('ev-assets/backend/img/flags/es.png') }}" alt=""> Spanish</a></li>
+              <li><a href="{{ url('admin/language/th') }}"><img src="{{ asset('ev-assets/backend/img/flags/th.png') }}" width='18' height='13' alt=""> Thai</a></li>
+              <li><a href="{{ url('admin/language/tk') }}"><img src="{{ asset('ev-assets/backend/img/flags/tk.png') }}" width='18' height='13' alt=""> Turkish</a></li>           
+          </ul>
+        </li>
+ --}}
