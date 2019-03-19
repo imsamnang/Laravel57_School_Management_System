@@ -7,9 +7,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::view('teacher','admin.teachers.create');
+Route::view('student','admin.students.create');
 
 // Route::view('/admin/student/create','admin.students.create')->name('admin.student.create');
-// Route::view('/admin/teacher/create','admin.teachers.create')->name('admin.teacher.create');
+//Route::view('/admin/teacher/create','admin.teachers.create')->name('admin.teacher.create');
 
 //Create Language Translation route
 Route::get('languages', 'Admin\\LanguageTranslationController@index')->name('languages');

@@ -87,7 +87,22 @@
 	<script src="{{asset('assets/backend/global_assets/js/plugins/forms/styling/uniform.min.js')}}"></script>
 	<script src="{{asset('assets/backend/global_assets/js/plugins/forms/styling/switch.min.js')}}"></script>
 	<script src="{{asset('assets/backend/global_assets/js/demo_pages/form_checkboxes_radios.js')}}"></script>
-	<script src="{{asset('assets/backend/global_assets/js/custom.js')}}"></script>	
+	<script src="{{asset('assets/backend/global_assets/js/custom.js')}}"></script>
+		<script type="text/javascript">
+			 function readURL(input) {
+			            if (input.files && input.files[0]) {
+			                var reader = new FileReader();
+
+			                reader.onload = function (e) {
+			                    $('#blah')
+			                        .attr('src', e.target.result);
+			                };
+
+			                reader.readAsDataURL(input.files[0]);
+			            }
+			        }
+
+		</script>
 	@stack('js')
 </body>
 </html>

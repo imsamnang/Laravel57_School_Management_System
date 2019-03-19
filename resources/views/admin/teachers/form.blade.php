@@ -83,7 +83,7 @@
 
 					<div class="form-group">
 						<label for="pob">Emergency Contact Address</label>
-						<textarea id="my-editor2" name="txt_contact-address" rows="7" class="form-control"></textarea>
+						<textarea id="my-editor2" name="txt_contact-address" rows="5" class="form-control"></textarea>
 					</div>
 				</div>
 
@@ -139,14 +139,14 @@
 
 					<div class="form-group">
 						<label for="exampleFormControlFile1">Choose Your Image</label>
-            <input type='file' onchange="readURL(this);" name="image" width="100%" style="margin-bottom: 5px;" />
-            <img id="blah" src="http://placehold.it/180" alt="your image" width="100" height="110" />
+            <input type='file' onchange="readURL(this);" name="image" />
+            <img id="blah" src="http://placehold.it/180" alt="your image" width="80" height="90" />
 					</div>
 				</div>
 			</div>
 		</fieldset>
 
-		<h6>ព័ត៌មានការងា</h6>
+{{-- 		<h6>ព័ត៌មានការងា</h6>
 		<fieldset>
 			<div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
@@ -166,6 +166,21 @@
                           <option value="">Cleaner</option>
                         </select>
                     </div>
+
+                    <div class="form-group">
+                      <label for="contact_phone">Contrat Value (Riel/Dollar)</label>
+                      <input type="text" class="form-control" id="contrat_value" placeholder="Enter Your Contrat Value" name="contrat_value">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sel1">Working Time</label>
+                        <select class="form-control" id="work_time" name="work_time" required>
+                          <option selected="disabled">Select Your Work Time</option>
+                          <option value="">Part Time</option>
+                          <option value="">Full Time</option>
+                        </select>
+                    </div>
+                    
                 </div>
 
                 <div class="col-lg-6 col-md-6 col-sm-12">
@@ -182,28 +197,8 @@
                           <option value="">Not Teach</option>
                         </select>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                      <div class="form-group">
-                        <label for="sel1">Working Time</label>
-                        <select class="form-control" id="work_time" name="work_time" required>
-                          <option selected="disabled">Select Your Work Time</option>
-                          <option value="">Part Time</option>
-                          <option value="">Full Time</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="form-group">
-                      <label for="contact_phone">Contrat Value (Riel/Dollar)</label>
-                      <input type="text" class="form-control" id="contrat_value" placeholder="Enter Your Contrat Value" name="contrat_value">
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                      <div class="form-group">
                         <label for="sel1">None Teaching Staff Main</label>
                         <select class="form-control" id="none_teach" name="none_teach">
                           <option selected="disabled">Select Your None Teaching Staff Main</option>
@@ -214,7 +209,7 @@
                         </select>
                     </div>
                 </div>
-        </div>
+            </div>
 		</fieldset>
 
 		<h6>ការអប់រំ និងបណ្តុះបណ្តាល</h6>
@@ -247,10 +242,16 @@
                       <label for="Year">Year</label>
                       <input type="text" class="form-control" id="year" placeholder="Enter Your Program Archieved Year" name="year">
                     </div>
+
+                    <div class="form-group">
+                        <label for="contact_address">Location</label>
+                        <textarea class="form-control" rows="5" id="location" name="location"></textarea>
+                    </div>
+
                 </div>
 
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="form-group">
+                	<div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="form-group">
                         <label for="sel1">Foreign Language</label>
                         <select class="form-control" id="knowledge" name="knowledge" required>
                           <option selected="disabled">Select Your Level</option>
@@ -275,14 +276,7 @@
                       <input type="text" class="form-control" id="school_name" placeholder="Enter Your School Name" name="school_name">
                     </div>
                 </div>
-
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="form-group">
-                        <label for="contact_address">Location</label>
-                        <textarea class="form-control" rows="4" id="location" name="location"></textarea>
-                    </div>
-                </div>
-      </div>
+             </div>
 		</fieldset>
 
 		<h6>គុណវុឌ្ឍិ</h6>
@@ -326,8 +320,8 @@
 		<h6>ប្រវត្តិការងារ (សូមបំពេញពីថ្មីទៅចាស់)</h6>
 		<fieldset>
 			<div class="row">
-				      <div class="col-lg-6 col-md-6 col-sm-12">
-					         <div class="form-group">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="form-group">
                       <label for="Year">Position</label>
                       <input type="text" class="form-control" id="position" placeholder="Enter Your Position" name="position">
                     </div>
@@ -336,28 +330,27 @@
                       <label for="e-mail">Start Date</label>
                       <input type="date" class="form-control" id="date" placeholder="Enter Your Start Date" name="start_date">
                     </div>
-				      </div>
-				      <div class="col-lg-6 col-md-6 col-sm-12">
-					         <div class="form-group">
-                      <label for="Year">Organization</label>
-                      <input type="text" class="form-control" id="organization" placeholder="Enter Your Organization" name="organization">
-                    </div>
 
                     <div class="form-group">
                       <label for="e-mail">End Date</label>
                       <input type="date" class="form-control" id="date" placeholder="Enter Your End Date" name="end_date">
                     </div>
-				      </div>
-              <div class="col-lg-12 col-md-12 col-sm-12">
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="form-group">
+                      <label for="Year">Organization</label>
+                      <input type="text" class="form-control" id="organization" placeholder="Enter Your Organization" name="organization">
+                    </div>
+
                     <div class="form-group">
                         <label for="pob">Work Location</label>
-                        <textarea  name="work_lacation" rows="4" class="form-control"></textarea>
+                        <textarea  name="work_lacation" rows="5" class="form-control"></textarea>
                     </div>
-              </div>
+				</div>
 			</div>
 			             <button type="submit" class="btn btn-primary">Save Data</button>
                    <button type="submit" class="btn btn-info">Back Home</button>
-		</fieldset>
+		</fieldset> --}}
 	</form>
 </div>
 
