@@ -21,6 +21,7 @@
 	<form class="wizard-form steps-basic" action="#" data-fouc method="post" enctype="multipart/form-data">
 		<h6>ជីវប្រវត្ត</h6>	
 		<fieldset>
+    <b><legend>Please Insert Your Personal information Below</legend></b>
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-12">
 
@@ -145,9 +146,10 @@
 				</div>
 			</div>
 		</fieldset>
-
+    
 		<h6>ព័ត៌មានការងា</h6>
 		<fieldset>
+      <b><legend>Please Insert Your Job information Below</legend></b>
 			<div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="form-group">
@@ -219,6 +221,7 @@
 
 		<h6>ការអប់រំ និងបណ្តុះបណ្តាល</h6>
 		<fieldset>
+      <b><legend>Please Insert Your Education and Training Below</legend></b>
 			<div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="form-group">
@@ -287,6 +290,7 @@
 
 		<h6>គុណវុឌ្ឍិ</h6>
 		<fieldset>
+      <b><legend>Please Insert Your Qualifications Below</legend></b>
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-12">
 					<div class="form-group">
@@ -325,6 +329,7 @@
 
 		<h6>ប្រវត្តិការងារ (សូមបំពេញពីថ្មីទៅចាស់)</h6>
 		<fieldset>
+      <b><legend>Please Insert Your Employment History (latest first) Below</legend></b>
 			<div class="row">
 				      <div class="col-lg-6 col-md-6 col-sm-12">
 					         <div class="form-group">
@@ -355,8 +360,6 @@
                     </div>
               </div>
 			</div>
-			             <button type="submit" class="btn btn-primary">Save Data</button>
-                   <button type="submit" class="btn btn-info">Back Home</button>
 		</fieldset>
 	</form>
 </div>
