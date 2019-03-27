@@ -9,6 +9,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::view('teacher','admin.teachers.create');
 Route::view('student','admin.students.create');
+Route::view('category','admin.categories.create');
 
 // Route::view('/admin/student/create','admin.students.create')->name('admin.student.create');
 //Route::view('/admin/teacher/create','admin.teachers.create')->name('admin.teacher.create');
