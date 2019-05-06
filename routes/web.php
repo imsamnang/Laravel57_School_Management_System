@@ -23,7 +23,7 @@ Route::post('translations/create', 'Admin\\LanguageTranslationController@store')
 
 Route::get('check-translation', function(){
 	\App::setLocale('kh');
-	
+
 	dd(__('backend.dashboard'));
 });
 
@@ -52,10 +52,11 @@ Route::post('admin/generator', ['uses' => 'Admin\\ProcessController@postGenerato
 // Ajax to switch languages routes
 
 Route::post('language-chooser','Admin\\AjaxLanguageController@changeLanguage');
-
 Route::post('/language', array(
 	'before' => 'csrf',
 	'as' => 'language-chooser',
-	'uses' => 'Admin\\AjaxLanguageController@changeLanguage', 
+	'uses' => 'Admin\\AjaxLanguageController@changeLanguage',
 	)
 );
+
+Route::resource('admin/posts', 'Admin\\PostsController');
